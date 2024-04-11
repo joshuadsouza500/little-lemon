@@ -19,8 +19,9 @@ export const Discover = () => {
         
         <div className=' pt-14 md:pt-1 lg:pl-20 flex justify-center md:flex-none'>
          
-        <div className="carousel carousel-center bg-greener rounded-badge w-mid  border-golden shadow-md  items-center">          
+        <div className="carousel carousel-center bg-greener rounded-badge w-mid  border-golden shadow-md  items-center">        
                   <div className="carousel-item w-[80%] px-8 ">
+                    
                     <img src="src/assets/newfettucine (1).png" className="w-full " />
                     
                   </div> 

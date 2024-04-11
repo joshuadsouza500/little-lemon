@@ -20,7 +20,7 @@ export const Contact = () => {
           </span>
           <span >
           <span className='font-bold text-lg -ml-1'>Location:</span> <br/>
-            Moxhe 118a Macpherson Street Bronte,<br/> California 2024<br/> 
+            Moxhe 118a Macpherson Street Bronte,<br/> Chicago 2024<br/> 
           </span>
           <span>
               <span className='font-bold text-lg -ml-1'>Hours of Operation:</span><br/> 

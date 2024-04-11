@@ -13,9 +13,10 @@ export const Home = () => {
     <>
         <NavBar />
       <Hero />
-   <About />
+  
      <Discover /> 
     <Reviews /> 
+    <About />
     <Contact />
     <Footer />
     </>

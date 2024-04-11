@@ -2,7 +2,7 @@ import React from 'react'
 
 export const NavBar = () => {
   return (
-    <nav className='p-1 w-full fixed backdrop-filter backdrop-blur-sm glass z-20 rounded-3xl m-2 '>
+    <nav className='p-1 w-full fixed bg-white z-20'>
       <div className='flex justify-between items-center font-josefin'>
         <a href='/'>
             <img src='src/assets/littlelicon.png'width={200} height={50} className='ml-4 md:ml-12'></img>
