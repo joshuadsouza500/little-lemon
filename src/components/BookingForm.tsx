@@ -49,22 +49,20 @@ const handleForm =(e)=>{
 
   return (
     <>
-      <div className='flex justify-center items-start pt-16 md:pt-24 text-center'>
-            <a href='/' className='btn btn-circle bg-golden md:ml-6 m-4 absolute left-0 hover:bg-greener'> ❮ </a>
-           
-            <h1 className='font-alex text-golden text-6xl lg:text-7xl text-center pb-6 pr-4'>
+      <div className='pt-20 md:pt-24 text-center'> 
+            <h1 className='font-alex text-golden text-6xl pt-6 lg:text-7xl text-center pb-6 pr-4'>
                    Book A Table            
               </h1>
               </div> 
       <div className='flex justify-center  lg:h-4/5 m-5 pb-10'>
-        <form   className='w-9/12 md:w-10/12 lg:w-8/12 bg-greener rounded-2xl font-josefin flex flex-col items-start sm:items-center pl-6 md:pl-3 py-8 md:py-16' onSubmit={handleForm}>
+        <form   className='w-10/12 lg:w-8/12 bg-greener rounded-2xl font-josefin flex flex-col items-center px-4 md:pl-3 py-8 md:py-16' onSubmit={handleForm}>
          
        {/*Date*/}
 
-      <div className='sm:grid grid-cols-2 gap-x-10 gap-y-4 pb-2 pr-4'>
+      <div className='sm:grid grid-cols-2 gap-x-10 gap-y-4 pb-2 pr-2 '>
           <div className='mb-4  md:w-full '> 
             <label htmlFor='date' className="block text-white text-sm font-bold mb-2">Date:</label>
-            <input id='date' type="date"   className="input input-bordered w-full max-w-xs" onChange={handleDateChange} required  />
+            <input id='date' type="date"   className="input input-bordered w-[100%] md:w-64 " onChange={handleDateChange} required  />
           </div>
 
         {/*Timings*/}
@@ -98,14 +96,14 @@ const handleForm =(e)=>{
           </div>
      </div>
      {/*occasion*/}
-          <div className='mb-4 grid '> 
+          <div className='mb-4 w-[85%] md:w-auto grid '> 
             <label htmlFor='occasion' className="block text-white text-sm font-bold mb-2">Occasion</label>
-          <textarea id='occasion' className="textarea textarea-bordered w-56 sm:w-96 lg:w-zz" placeholder="Type here" value={occasionValue} onChange={occChange} ></textarea>
+          <textarea id='occasion' className="textarea textarea-bordered  sm:w-96 lg:w-zz" placeholder="Type here" value={occasionValue} onChange={occChange} ></textarea>
         
          </div>
          
-         <div className="ml-6 self-start sm:self-center mt-4 ">
-           <button className="bg-golden hover:bg-greener hover:text-golden text-white font-bold py-2 px-4 rounded border-golden border w-32" type="button">
+         <div className=" self-center mt-4 ">
+           <button className="bg-golden hover:bg-greener text-white hover:border font-bold py-2 px-4 rounded w-32 md:w-44" type="button">
              Book ❯
            </button>
           

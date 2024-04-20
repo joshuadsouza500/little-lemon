@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer className="bg-[url('src/assets/footer.jpg')]">
+    <footer className="bg-[url('src/assets/footer.jpg')] bottom-0">
     <div className=" font-josefin p-2 flex justify-between px-6 md:px-40 items-center">
         <div>
         <ul tabIndex={0} className="flex flex-col gap-1 text-white text-opacity-80">

@@ -11,7 +11,7 @@ export const OurTeam = () => {
            <p className='font-josefin text-justify text-blackish text-lg w-[95%] md:w-[80%] pb-4'>
                 Our team of talented chefs pour their passion and expertise into crafting each dish with precision and care. With a dedication to preserving the authenticity of traditional cuisine, our chefs infuse every creation with the flavours of our heritage, ensuring that every bite is a delightful journey for the taste buds.
            </p>
-           <a href='/reservation' className='bg-golden  btn  text-white font-bold w-44  rounded-2xl hover:bg-greener hover:text-golden'>Reserve a table</a>
+           <a href='/reservation' className='bg-golden  btn  text-white font-bold w-44  rounded-xl hover:bg-greener hover:text-white'>Reserve a table</a>
         </div>
     <div className=' pt-14 md:pt-1 pr-1 flex justify-center md:flex-none md:w-2/4'>  
         <div className="carousel carousel-center max-w-md p-4 space-x-4  rounded-box shadow-md  items-center">          

@@ -3,11 +3,9 @@ import React from 'react'
 export const OurStory = () => {
   return (
     <>
-      <div className='pb-4 md:pb-10'>
-        <div className='flex justify-center items-start pt-16 md:pt-24 text-center'>
-            <a href='/' className='btn btn-circle bg-golden md:ml-8 m-4 absolute left-0 hover:bg-greener'> ❮ </a>
-           
-            <h1 className='font-alex text-golden text-6xl lg:text-7xl text-center pb-6 pr-4'>
+      <div className='pb-4 md:pb-10 pt-5'>
+        <div className='pt-20 md:pt-24 text-center'>
+            <h1 className='font-alex text-golden text-6xl lg:text-7xl text-center pb-1 pr-4'>
                    About Us             
               </h1>
               </div> 

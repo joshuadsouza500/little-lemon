@@ -19,7 +19,9 @@ export default {
       width:{
         'zz' : '30rem',
          'mid' :'350px'
-      }
+      },
+     
+      
     },
   },
   // eslint-disable-next-line no-undef

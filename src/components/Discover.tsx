@@ -12,7 +12,7 @@ export const Discover = () => {
                Our Menu
             </h1>
            <p className='font-josefin text-justify text-blackish text-lg w-[95%] md:w-[80%] pb-4'>
-           Savor the vibrant flavors of the Mediterranean with our thoughtfully crafted dishes that showcase the best of both old-world charm and contemporary creativity. Our menu is a delicious exploration of traditiona roots, come taste the difference today.
+           Savor the flavors of the Mediterranean with our thoughtfully crafted dishes that showcase the best of both old-world charm and contemporary creativity. Our menu is a delicious exploration of traditiona roots, come taste the difference today.
            </p>
            <a href='/menu' className="-ml-4 sm:ml-0 text-lg text-golden font-josefin w-[165px]  border-b border-golden hover:text-greener hover:border-greener">View Our Full Menu</a>
         </div>
