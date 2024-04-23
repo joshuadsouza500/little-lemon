@@ -63,7 +63,7 @@ export const About = () => {
         </motion.div>
         <div className="px-8 pt-14 md:pt-1">
           <motion.img
-            src="src/assets/ABout.jpg"
+            src="/assets/ABout.jpg"
             width={2000}
             alt="Restaurant image"
             initial={{ filter: 'blur(4px)' }}

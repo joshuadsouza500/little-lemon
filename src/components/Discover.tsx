@@ -64,14 +64,14 @@ export const Discover = () => {
 
         <div className="overflow-hidden py-2 self-center md:self-auto mt-6 md:mt-2  w-mid ml-2 bg-greener rounded-2xl shadow-2xl px-2">
           <motion.div className=" flex items-center gap-3 animate-slide ">
-            <img src="src/assets/newfettucine (1).png" className="w-full " />
-            <img src="src/assets/newplate .png" className="w-full " />
+            <img src="/assets/newfettucine (1).png" className="w-full " />
+            <img src="/assets/newplate .png" className="w-full " />
             <img
-              src="src/assets/newfalafel - removebg-preview (1).png"
+              src="/assets/newfalafel - removebg-preview (1).png"
               className="w-full "
             />
-            <img src="src/assets/spanakopita.png" className="w-full " />
-            <img src="src/assets/newfettucine (1).png" className="w-full " />
+            <img src="/assets/spanakopita.png" className="w-full " />
+            <img src="/assets/newfettucine (1).png" className="w-full " />
           </motion.div>
         </div>
       </div>

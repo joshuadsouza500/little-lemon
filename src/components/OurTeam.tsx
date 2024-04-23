@@ -62,7 +62,7 @@ export const OurTeam = () => {
               <div className="card bg-zinc-800 shadow-xl">
                 <figure>
                   <img
-                    src="src/assets/chef2.png"
+                    src="/assets/chef2.png"
                     alt="chef"
                     className=" w-[80%] mt-2"
                   />
@@ -77,7 +77,7 @@ export const OurTeam = () => {
               <div className="card  bg-zinc-800 shadow-xl">
                 <figure>
                   <img
-                    src="src/assets/chef1.png"
+                    src="/assets/chef1.png"
                     alt="chef"
                     className="w-[60%] mt-2"
                   />
@@ -92,7 +92,7 @@ export const OurTeam = () => {
               <div className="card  bg-zinc-800 shadow-xl">
                 <figure>
                   <img
-                    src="src/assets/chef3.png"
+                    src="/assets/chef3.png"
                     alt="chef"
                     className="w-[82%] mt-2"
                   />
@@ -107,7 +107,7 @@ export const OurTeam = () => {
               <div className="card  bg-zinc-800 shadow-xl">
                 <figure>
                   <img
-                    src="src/assets/waiter.png"
+                    src="/assets/waiter.png"
                     alt="chef"
                     className="w-[75%] mt-2"
                   />

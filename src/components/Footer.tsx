@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Footer = () => {
   return (
-    <footer className="bg-[url('src/assets/footer.jpg')] bottom-0">
+    <footer className="bg-[url('/assets/footer.jpg')] bottom-0">
       <div className=" font-josefin p-2 flex justify-between px-6 md:px-40 items-center">
         <div>
           <ul
@@ -62,7 +62,7 @@ export const Footer = () => {
       </div>
       <hr className="white opacity-50" />
       <div className="p-2 md:px-8 text-white text-opacity-80 flex items-center justify-between">
-        <img src="src/assets/little_lemon_logo.png" width={120}></img>
+        <img src="/assets/little_lemon_logo.png" width={120}></img>
         <h6> © 2024 Little Lemon</h6>
       </div>
     </footer>

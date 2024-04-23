@@ -83,7 +83,7 @@ export const Contact = () => {
         </motion.div>
         <div className="px-6 ml-4 md:ml-1 pt-14 md:pt-24 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20">
           <motion.img
-            src="src/assets/map.png"
+            src="/assets/map.png"
             className="rounded-2xl"
             initial={{ filter: 'blur(4px)' }}
             whileInView={{ filter: 'blur(0px)' }}

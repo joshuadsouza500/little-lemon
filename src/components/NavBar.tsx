@@ -27,7 +27,7 @@ export const NavBar = () => {
       <div className="flex justify-between items-center font-josefin">
         <NavLink to="/">
           <img
-            src="src/assets/littlelicon.png"
+            src="/assets/littlelicon.png"
             width={200}
             height={50}
             className="ml-4 md:ml-12"
@@ -75,7 +75,7 @@ export const NavBar = () => {
                 to="/cart"
                 className=" aria-[current=page]:border-b-green-700  aria-[current=page]:border-b-2"
               >
-                <img className="-mt-3" src="src/assets/download.svg"></img>
+                <img className="-mt-3" src="/assets/download.svg"></img>
               </NavLink>
             </li>
           </ul>
@@ -86,7 +86,7 @@ export const NavBar = () => {
           <span className="-mt-2 text-golden text-2xl p-1">{cartQuantity}</span>
           <img
             className="h-10 hover:scale-105 "
-            src="src/assets/download.svg"
+            src="/assets/download.svg"
           ></img>
         </NavLink>
         <div className="md:hidden dropdown dropdown-end sm:mr-4 p-1 flex gap-1">

@@ -72,7 +72,7 @@ export const OurStory = () => {
           </motion.div>
           <div className="md:pr-10 md:pt-10 flex justify-center p-5 md:flex-none md:w-1/2 md:h-96">
             <motion.img
-              src="src/assets/seating2new.jpg"
+              src="/assets/seating2new.jpg"
               width={500}
               initial={{ filter: 'blur(4px)' }}
               whileInView={{ filter: 'blur(0px)' }}

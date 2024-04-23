@@ -21,7 +21,7 @@ export const Hero = () => {
     <>
       <div
         id="top"
-        className=" bg-cover bg-no-repeat bg-center w-full h-dvh md:h-dvh bg-[url('src/assets/bgv.jpg')] md:bg-[url('src/assets/bgmain.jpg')] "
+        className=" bg-cover bg-no-repeat bg-center w-full h-dvh md:h-dvh bg-[url('/assets/bgv.jpg')] md:bg-[url('/assets/bgmain.jpg')] "
       >
         <div className="inset-0 bg-black bg-opacity-50 h-dvh">
           <motion.div
