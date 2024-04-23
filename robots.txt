@@ -1,0 +1,4 @@
+
+User-agent: *
+Disallow:
+Sitemap:https://little-lemonbh.vercel.app/sitemap.xml
