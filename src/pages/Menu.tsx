@@ -1,15 +1,20 @@
 import React from 'react'
-import { NavBar } from '../components/NavBar'
-import { Footer } from '../components/Footer' 
+
+import { Footer } from '../components/Footer'
 import { FullMenu } from '../components/FullMenu'
-import {menuData} from '../components/items'
+import { menuData } from '../components/items'
+import { motion } from 'framer-motion'
+
 export const Menu = () => {
   return (
-    <>
-    <NavBar />
-    <FullMenu menuItems= {menuData}/>
-    <Footer />
-  </>
+    <motion.main
+       initial={{ y: 10 }}
+       animate={{ y : 0}}
+       exit={{ y: -10,opacity:0 }}
+       transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+    >
+      <FullMenu menuItems={menuData} />
+      <Footer />
+    </motion.main>
   )
 }
-

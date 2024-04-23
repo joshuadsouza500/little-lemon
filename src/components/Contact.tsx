@@ -1,40 +1,103 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { NavLink } from 'react-router-dom'
 
+const contactVariant = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      type: 'spring',
+    },
+  },
+}
 export const Contact = () => {
   return (
     <>
-      <div className='flex flex-col md:flex-row  pt-20 pb-10 pr-2 justify-between'>
-        <div className='flex flex-col gap-3 ml-10 md:ml-28 pr-2  md:pr-0 items-start'>
-           <h1 className='font-alex text-golden text-6xl lg:text-7xl text-center md:text-left pr-4 ml-[8%] '>
-              Say Hello
-           </h1>
-           <h1 className='pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish  text-center ml-4 md:text-left pb-6 '>
-              Contact Us
-           </h1>
-           <div className='font-josefin text-blackish font-normal ml-2 flex flex-col gap-4 pb-7'>
-          <span>
-              <span className='font-bold text-lg -ml-1'>Call Us:</span>
-              <br/>
-              (415) 123-4567<br/>
-              (415) 453-6724<br/>
-          </span>
-          <span >
-          <span className='font-bold text-lg -ml-1'>Location:</span> <br/>
-            Moxhe 118a Macpherson Street Bronte,<br/> Chicago 2024<br/> 
-          </span>
-          <span>
-              <span className='font-bold text-lg -ml-1'>Hours of Operation:</span><br/> 
-                Sunday:      Closed<br/>
-                Monday:      Closed<br/>
-                Tuesday - Saturday:   9:00 am - 6:00 pm
-          </span>
-          </div>
-          <a className="font-josefin btn w-40 btn-ghost p-2 text-base bg-golden border-white rounded-xl hover:bg-greener text-white" href='/reservation' >Reserve a table</a>
+      <div className="flex flex-col md:flex-row  pt-20 pb-10 pr-2 justify-between">
+        <motion.div
+          className="flex flex-col gap-3 ml-10 md:ml-28 pr-2  md:pr-0 items-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: { staggerChildren: 0.2, delay: 0.2 },
+            },
+          }}
+        >
+          <motion.h1
+            className="font-alex text-golden text-6xl lg:text-7xl text-center md:text-left pr-4 ml-[8%] "
+            variants={contactVariant}
+          >
+            Say Hello
+          </motion.h1>
+          <motion.h1
+            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish  text-center ml-4 md:text-left pb-6 "
+            variants={contactVariant}
+          >
+            Contact Us
+          </motion.h1>
+          <motion.div
+            className="font-josefin text-blackish font-normal ml-1 flex flex-col gap-4 pb-7"
+            variants={contactVariant}
+          >
+            <span>
+              <span className="font-bold text-lg -ml-1">Call Us:</span>
+              <br />
+              (415) 123-4567
+              <br />
+              (415) 453-6724
+              <br />
+            </span>
+            <span>
+              <span className="font-bold text-lg -ml-1">Location:</span> <br />
+              Moxhe 118a Macpherson Street Bronte,
+              <br /> Chicago 2024
+              <br />
+            </span>
+            <span>
+              <span className="font-bold text-lg -ml-1">
+                Hours of Operation:
+              </span>
+              <br />
+              Sunday: Closed
+              <br />
+              Monday: Closed
+              <br />
+              Tuesday - Saturday: 9:00 am - 6:00 pm
+            </span>
+          </motion.div>
+          <motion.button
+            className="btn w-40 md:w-44 text-base bg-golden  rounded-lg  hover:bg-greener  text-white"
+            variants={contactVariant}
+          >
+            <NavLink to="/reservation">Book a table</NavLink>
+          </motion.button>
+        </motion.div>
+        <div className="px-6 ml-4 md:ml-1 pt-14 md:pt-24 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20">
+          <motion.img
+            src="src/assets/map.png"
+            className="rounded-2xl"
+            initial={{ filter: 'blur(4px)' }}
+            whileInView={{ filter: 'blur(0px)' }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          ></motion.img>
+          <a
+            href="#top"
+            className=" absolute right-3 md:right-10 -mt-4 md:-mt-12 text-4xl btn btn-circle bg-greener text-white  "
+          >
+            &#8593;
+          </a>
         </div>
-        <div className='px-6 ml-4 md:ml-1 pt-14 md:pt-24 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20'>
-          <img src='src/assets/map.png' className='rounded-2xl' ></img>
-        </div>
-     </div>
+      </div>
     </>
   )
 }

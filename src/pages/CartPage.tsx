@@ -1,20 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import { NavBar } from '../components/NavBar'
-import { Footer } from '../components/Footer' 
+import { Footer } from '../components/Footer'
 import { Cart } from '../components/Cart'
+import { motion } from 'framer-motion'
 
 export const CartPage = () => {
-
-         
-
   return (
-    <div className="flex flex-col min-h-screen">
-    <NavBar />
-    <Cart />
-    <div className="mt-auto">
-      <Footer />
-    </div>
-  </div>
+    <motion.div className="flex flex-col min-h-screen"
+        initial={{ y: 10 }}
+        animate={{ y : 0}}
+        exit={{ y: -10,opacity:0 }}
+        transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+    >
+      <Cart />
+      <div className="mt-auto">
+        <Footer />
+      </div>
+    </motion.div>
   )
 }

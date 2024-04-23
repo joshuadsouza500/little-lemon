@@ -1,3 +1,7 @@
+
+
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -20,9 +24,19 @@ export default {
         'zz' : '30rem',
          'mid' :'350px'
       },
-     
-      
+      animation:{
+        'slide' :'slide-left 25s  infinite linear',
+        
+      },
+      keyframes: {
+        'slide-left': {
+          to: { transform: 'translateX(-400%)',
+              
+        },
+        },      
     },
+      
+  }
   },
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
