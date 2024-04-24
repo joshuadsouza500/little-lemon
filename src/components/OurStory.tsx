@@ -55,14 +55,14 @@ export const OurStory = () => {
               Our Story
             </motion.h1>
             <motion.span
-              className="font-josefin text-justify text-blackish w-[95%] text-lg md:text-base lg:text-lg md:w-[85%] pb-4 "
+              className="font-josefin text-justify text-blackish w-[95%] text-lg md:text-base lg:text-lg md:w-[85%] pb-4 mr-2 "
               variants={aboutVariant}
             >
               Nestled in the heart of California, Little Lemon is a restaurant
               that holds a special place in the community. Founded by our family
               50 years ago, our restaurant has been a cherished gathering spot
               for those seeking the flavours of traditional Mediterranean
-              cuisine.<br></br>As a family-owned business, every dish that
+              cuisine.<br></br>   As a family-owned business, every dish that
               leaves our kitchen carries with it the warmth and charm of our
               heritage. Our commitment to preserving the authenticity of
               traditional Mediterranean flavours is at the heart of everything
@@ -74,6 +74,7 @@ export const OurStory = () => {
             <motion.img
               src="/assets/seating2new.jpg"
               width={500}
+              className='rounded-md'
               initial={{ filter: 'blur(4px)' }}
               whileInView={{ filter: 'blur(0px)' }}
               transition={{ duration: 1 }}

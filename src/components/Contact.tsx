@@ -21,7 +21,7 @@ export const Contact = () => {
     <>
       <div className="flex flex-col md:flex-row  pt-20 pb-10 pr-2 justify-between">
         <motion.div
-          className="flex flex-col gap-3 ml-10 md:ml-28 pr-2  md:pr-0 items-start"
+          className="flex flex-col gap-3 ml-8 md:ml-28 pr-2  md:pr-0 items-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -33,13 +33,13 @@ export const Contact = () => {
           }}
         >
           <motion.h1
-            className="font-alex text-golden text-6xl lg:text-7xl text-center md:text-left pr-4 ml-[8%] "
+            className="font-alex text-golden text-6xl lg:text-7xl text-center md:text-left pr-4 ml-[12%] "
             variants={contactVariant}
           >
             Say Hello
           </motion.h1>
           <motion.h1
-            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish  text-center ml-4 md:text-left pb-6 "
+            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish  text-center ml-8 md:text-left pb-6 "
             variants={contactVariant}
           >
             Contact Us
@@ -75,13 +75,13 @@ export const Contact = () => {
             </span>
           </motion.div>
           <motion.button
-            className="btn w-40 md:w-44 text-base bg-golden  rounded-lg  hover:bg-greener  text-white"
+            className="ml-1 btn w-40 md:w-44 text-base bg-golden  rounded-lg  hover:bg-greener  text-white"
             variants={contactVariant}
           >
             <NavLink to="/reservation">Book a table</NavLink>
           </motion.button>
         </motion.div>
-        <div className="px-6 ml-4 md:ml-1 pt-14 md:pt-24 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20">
+        <div className="px-2 ml-5 mr-1 md:ml-1 pt-14 md:pt-24 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20">
           <motion.img
             src="/assets/map.png"
             className="rounded-2xl"
@@ -90,12 +90,7 @@ export const Contact = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           ></motion.img>
-          <a
-            href="#top"
-            className=" absolute right-3 md:right-10 -mt-4 md:-mt-12 text-4xl btn btn-circle bg-greener text-white  "
-          >
-            &#8593;
-          </a>
+          
         </div>
       </div>
     </>

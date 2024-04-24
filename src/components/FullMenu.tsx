@@ -45,33 +45,29 @@ export const FullMenu = ({ menuItems }) => {
       </div>
       <section className=" bg-gradient-to-br from-base-100 to-teal-50">
         <div className="p-5 bg-greener bg-opacity-90 mb-5 md:mb-10">
-          <ul className="flex justify-around text-white font-josefin text-base md:text-lg scroll-smooth">
+          <ul className="flex justify-around text-white font-josefin text-base md:text-lg scroll-smooth gap-4">
             <li className="hover:scale-105 hover:text-golden scroll-smooth">
-              {' '}
               <a href="#specials">Specials</a>
             </li>
             <li className="hover:scale-105 hover:text-golden">
-              {' '}
+              
               <a href="#starters">Starters</a>
             </li>
             <li className="hover:scale-105 hover:text-golden">
-              {' '}
               <a href="#mains">Mains</a>
             </li>
             <li className="hover:scale-105 hover:text-golden">
-              {' '}
               <a href="#desserts">Desserts</a>
             </li>
             <li className="hover:scale-105 hover:text-golden">
-              {' '}
               <a href="#drinks">Drinks</a>
             </li>
           </ul>
         </div>
 
-        <div id="specials" className="px-2 py-5">
+        <div id="specials" className="px-1 py-5">
           <motion.h1
-            className="font-josefin text-golden text-5xl lg:text-6xl text-start ml-6 md:ml-20 pb-6 pr-2 font-semibold"
+            className="font-josefin text-golden text-5xl lg:text-6xl text-start ml-4 md:ml-20 pb-6 pr-2 font-semibold"
             initial={{ y: 10, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -83,7 +79,7 @@ export const FullMenu = ({ menuItems }) => {
 
         <div className=" text-blackish font-josefin  ">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 ml-4 mr-2 md:ml-14 lg:ml-20 "
+            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -96,7 +92,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 3).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-96 lg:w-zz hover:scale-[1.005]"
+                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005]"
                 variants={menuVariant}
                 key={item.id}
               >
@@ -105,7 +101,7 @@ export const FullMenu = ({ menuItems }) => {
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-4 self-center">
+                <div className="pl-3 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
                   <p className="pl-2 text-sm pb-3 font-normal leading-none md:leading-tight w-[92%]">
                     {item.para}
@@ -143,7 +139,7 @@ export const FullMenu = ({ menuItems }) => {
         </div>
         <div className=" text-blackish font-josefin">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 ml-4 mr-2 md:ml-14 lg:ml-20"
+            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -156,7 +152,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(6, 9).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-96 lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
               >
@@ -165,14 +161,14 @@ export const FullMenu = ({ menuItems }) => {
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-4 self-center">
+                <div className="pl-3 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
                   <p className=" pl-2 text-sm pb-2 font-normal leading-none w-[92%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 items-center">
+                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 pt-1 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
-                      {' '}
+      
                       ${item.price}
                     </h6>
                     <button
@@ -204,7 +200,7 @@ export const FullMenu = ({ menuItems }) => {
         </div>
         <div className=" text-blackish font-josefin">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 ml-4 md:ml-14 lg:ml-20"
+            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -217,7 +213,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 6).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-96 lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
               >
@@ -226,12 +222,12 @@ export const FullMenu = ({ menuItems }) => {
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-4 self-center">
+                <div className="pl-3 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
                   <p className="pl-2 text-sm pb-2 font-normal leading-none w-[92%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 items-center">
+                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 pt-1 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
@@ -264,7 +260,7 @@ export const FullMenu = ({ menuItems }) => {
         </div>
         <div className=" text-blackish font-josefin">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 ml-4 md:ml-14 lg:ml-20"
+            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -278,7 +274,7 @@ export const FullMenu = ({ menuItems }) => {
             {menuItems.slice(9, 12).map((item: props) => (
               <motion.div
                 variants={menuVariant}
-                className="card card-side bg-base-100 shadow-xl w-96 lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
               >
                 <div className="bg-greener rounded-lg self-center py-5">
@@ -286,12 +282,12 @@ export const FullMenu = ({ menuItems }) => {
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-4 self-center">
+                <div className="pl-3 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
                   <p className="pl-2 text-sm pb-2 font-normal leading-none w-[92%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 items-center">
+                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2  items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
@@ -325,37 +321,37 @@ export const FullMenu = ({ menuItems }) => {
         <div className="flex flex-col items-center justify-around md:flex-row-reverse ">
           <div className="mb-14">
             <img
-              src="src/assets/photo-collage.png.png"
+              src="/assets/photo-collage.png.png"
               className="w-80 md:w-96 "
             ></img>
           </div>
 
-          <div className=" text-blackish font-josefin ml-8 mb-10 ">
+          <div className=" text-blackish font-josefin ml-6 mr-2 mb-10 ">
             <h5 className="text-xl md:text-2xl  mt-3">Caribbean</h5>
-            <span className="opacity-90 font-light  md:text-lg pl-3  ">
+            <p className="opacity-90 font-light  md:text-lg pl-1 ">
               Grenadine syrup / vanilla ice cream / Avocado / honey.
-            </span>
+            </p>
             <h5 className="text-xl md:text-2xl  mt-3"> Margarita</h5>
-            <span className="font-light opacity-90 md:text-lg pl-3">
+            <p className="font-light opacity-90 md:text-lg pl-1">
               Lime / syrup / triple sec / honey.
-            </span>
+            </p>
             <h5 className="text-xl md:text-2xl  mt-3">Pina Colada</h5>
-            <span className="opacity-90 font-light  md:text-lg pl-3">
+            <p className="opacity-90 font-light  md:text-lg pl-1">
               Coconut cream / Pineapple juice / Rum / Pineapple wedge for
               garnish.
-            </span>
+            </p>
             <h5 className="text-xl md:text-2xl  mt-3">Mojito</h5>
-            <span className="opacity-90 font-light  md:text-lg pl-3">
+            <p className="opacity-90 font-light  md:text-lg pl-1">
               Fresh and zesty with a burst of lime and refreshing mint.
-            </span>
+            </p>
             <h5 className="text-xl md:text-2xl  mt-3"> Water</h5>
-            <span className="opacity-90 font-light  md:text-lg pl-3">
+            <p className="opacity-90 font-light  md:text-lg pl-1">
               Mineral / Sparkling
-            </span>
+            </p>
             <h5 className="text-xl md:text-2xl  mt-3"> Soft Drinks</h5>
-            <span className="opacity-90 font-light  md:text-lg pl-3">
+            <p className="opacity-90 font-light  md:text-lg pl-1">
               Cola / Fanta / Pepsi / Sprite.
-            </span>
+            </p>
           </div>
         </div>
       </section>

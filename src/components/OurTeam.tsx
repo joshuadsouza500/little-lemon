@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { NavLink } from 'react-router-dom'
 
 const aboutVariant = {
   hidden: {
@@ -38,7 +39,7 @@ export const OurTeam = () => {
             Meet The Team
           </motion.h1>
           <motion.p
-            className="font-josefin text-justify text-blackish text-lg w-[95%] md:w-[80%] pb-4
+            className="font-josefin text-justify text-blackish text-lg w-[95%] md:w-[80%] pb-4 mr-2
            "
             variants={aboutVariant}
           >
@@ -48,13 +49,12 @@ export const OurTeam = () => {
             every creation with the flavours of our heritage, ensuring that
             every bite is a delightful journey for the taste buds.
           </motion.p>
-          <motion.a
-            href="/reservation"
-            className="bg-golden  btn  text-white font-bold w-44  rounded-xl hover:bg-greener hover:text-white"
+          <motion.button
+            className="btn w-40 md:w-44 text-base bg-golden  rounded-lg  hover:bg-greener  text-white"
             variants={aboutVariant}
           >
-            Reserve a table
-          </motion.a>
+            <NavLink to="/reservation">Book a table</NavLink>
+          </motion.button>
         </motion.div>
         <div className=" pt-14 md:pt-1 pr-1 flex justify-center md:flex-none md:w-2/4">
           <div className="carousel carousel-center max-w-md p-4 space-x-4  rounded-box shadow-md  items-center">

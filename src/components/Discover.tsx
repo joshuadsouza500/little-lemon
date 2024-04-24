@@ -22,7 +22,7 @@ export const Discover = () => {
     <>
       <div className="flex flex-col md:flex-row-reverse pt-20 pb-10 md:pb-16 md:gap-32 pr-2">
         <motion.div
-          className="flex flex-col gap-3 ml-4 md:pl-16   md:pr-0 items-center md:items-baseline lg:w-[50%]"
+          className="flex flex-col gap-3 ml-4 mr-2 md:pl-16   md:pr-0 items-center md:items-baseline lg:w-[50%]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

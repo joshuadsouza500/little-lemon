@@ -17,7 +17,7 @@ export const Dish = ({ menuItems }) => {
   const { handleCart, isAdded } = useCartContext()
   return (
     <>
-      <div className="pt-20 px-4 lg:p-14 items-center h-full mr-1">
+      <div className="pt-20 mx-4 lg:p-14 items-center h-full ">
         {/*To condotional display if cart is empty using context prop*/}
         {isAdded && (
           <motion.div
@@ -32,15 +32,15 @@ export const Dish = ({ menuItems }) => {
         )}
 
         <div className="bg-base-100 shadow-xl grid md:grid-cols-2 md:mt-10 mt-2 rounded-lg">
-          <div className="bg-greener py-5 px-20 rounded-lg">
-            <figure className="">
-              <img src={menuItem.img} alt="food" className="p-1" />
+          <div className="bg-greener py-2 px-20 rounded-lg">
+            <figure >
+              <img src={menuItem.img} alt="food item image" className="p-1" />
             </figure>
           </div>
 
           {/*Card details*/}
 
-          <div className=" pl-4 md:pl-16 pt-10 md:pt-12 font-josefin text-blackish">
+          <div className=" pl-4 md:pl-16 pt-8 md:pt-12 font-josefin text-blackish">
             <h2 className=" p-2 -ml-2 font-black text-5xl mb-4 ">
               {menuItem.title}
             </h2>
@@ -68,7 +68,7 @@ export const Dish = ({ menuItems }) => {
               </h6>
 
               <button
-                className="btn btn-wide bg-golden hover:bg-greener text-white text-xl hover:scale-105 "
+                className="btn btn-wide ml-1 bg-golden hover:bg-greener text-white text-xl hover:scale-105 "
                 onClick={() => {
                   handleCart(menuItem)
                 }}

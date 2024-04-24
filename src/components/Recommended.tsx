@@ -47,9 +47,9 @@ export const Recommended = ({ menuItems }) => {
         </div>
       </div>
 
-      <div className=" text-blackish font-josefin mb-10">
+      <div className=" text-blackish font-josefin mb-16">
         <motion.div
-          className="grid  md:grid-cols-2 gap-4 md:gap-8 ml-4 mr-2 md:ml-14 lg:ml-20"
+          className="grid  md:grid-cols-2 gap-4 md:gap-8 ml-3 mr-2 md:ml-14 lg:ml-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -62,7 +62,7 @@ export const Recommended = ({ menuItems }) => {
         >
           {menuItems.slice(3, 6).map((item, index) => (
             <motion.div
-              className="card card-side bg-base-100 shadow-xl w-96 lg:w-zz hover:scale-[1.005] "
+              className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005] "
               key={index}
               variants={menuVariant}
             >
@@ -71,7 +71,7 @@ export const Recommended = ({ menuItems }) => {
                   <img src={item.img} alt="food" className="p-1" />
                 </figure>
               </div>
-              <div className="pl-4 self-center">
+              <div className="pl-3 self-center">
                 <h2 className="card-title p-2">{item.title}</h2>
                 <p className=" pl-2 text-sm pb-2 font-normal leading-none md:leading-tight w-[90%]">
                   {item.para}

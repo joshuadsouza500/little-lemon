@@ -21,7 +21,7 @@ export const About = () => {
     <>
       <div className="flex flex-col md:flex-row pt-20 pb-10 pr-2">
         <motion.div
-          className="flex flex-col gap-3 ml-6 md:ml-20 pr-2 md:pr-0 items-center md:items-start"
+          className="flex flex-col gap-3 ml-4 md:ml-20 mr-2 md:pr-0 items-center md:items-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -61,10 +61,11 @@ export const About = () => {
             Meet the team
           </motion.a>
         </motion.div>
-        <div className="px-8 pt-14 md:pt-1">
+        <div className="px-6 pt-14 md:pt-1 ">
           <motion.img
             src="/assets/ABout.jpg"
             width={2000}
+            className='rounded-md'
             alt="Restaurant image"
             initial={{ filter: 'blur(4px)' }}
             whileInView={{ filter: 'blur(0px)' }}

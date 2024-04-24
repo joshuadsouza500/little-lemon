@@ -30,7 +30,7 @@ export const NavBar = () => {
             src="/assets/littlelicon.png"
             width={200}
             height={50}
-            className="ml-4 md:ml-12"
+            className="ml-2 md:ml-12"
           ></img>
         </NavLink>
         {/* lg: navbar*/}
@@ -110,7 +110,7 @@ export const NavBar = () => {
             tabIndex={0}
             className="menu menu-lg dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52 "
           >
-            =
+            
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
