@@ -92,18 +92,18 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 3).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005]"
+                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005]"
                 variants={menuVariant}
                 key={item.id}
               >
-                <div className="bg-greener rounded-lg self-center py-5">
+                <div className="bg-greener rounded-lg self-center py-4">
                   <figure className="">
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-3 self-center">
+                <div className="pl-2 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
-                  <p className="pl-2 text-sm pb-3 font-normal leading-none md:leading-tight w-[92%]">
+                  <p className="pl-2 text-sm pb-3 font-normal leading-none md:leading-tight w-[93%]">
                     {item.para}
                   </p>
                   <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 items-center">
@@ -111,7 +111,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="btn btn-sm  hover:scale-105 bg-golden hover:bg-greener text-white  "
+                      className="btn btn-sm  hover:scale-105 bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -152,7 +152,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(6, 9).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
               >
@@ -161,9 +161,9 @@ export const FullMenu = ({ menuItems }) => {
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-3 self-center">
+                <div className="pl-2 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
-                  <p className=" pl-2 text-sm pb-2 font-normal leading-none w-[92%]">
+                  <p className=" pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
                   <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 pt-1 items-center">
@@ -213,7 +213,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 6).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
               >
@@ -222,9 +222,9 @@ export const FullMenu = ({ menuItems }) => {
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-3 self-center">
+                <div className="pl-2 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
-                  <p className="pl-2 text-sm pb-2 font-normal leading-none w-[92%]">
+                  <p className="pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
                   <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 pt-1 items-center">
@@ -274,7 +274,7 @@ export const FullMenu = ({ menuItems }) => {
             {menuItems.slice(9, 12).map((item: props) => (
               <motion.div
                 variants={menuVariant}
-                className="card card-side bg-base-100 shadow-xl w-[380px] lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
               >
                 <div className="bg-greener rounded-lg self-center py-5">
@@ -282,9 +282,9 @@ export const FullMenu = ({ menuItems }) => {
                     <img src={item.img} alt="food" className="p-1" />
                   </figure>
                 </div>
-                <div className="pl-3 self-center">
+                <div className="pl-2 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
-                  <p className="pl-2 text-sm pb-2 font-normal leading-none w-[92%]">
+                  <p className="pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
                   <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2  items-center">

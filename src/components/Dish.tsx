@@ -22,7 +22,7 @@ export const Dish = ({ menuItems }) => {
         {isAdded && (
           <motion.div
             role="alert"
-            className=" absolute top-12 right-1 md:right-10 md:w-[40%] px-4 py-8 text-center mx-2 text-2xl  bg-red-600 rounded-xl mt-10 text-white "
+            className=" absolute top-12 right-1 md:right-10 md:w-[40%] px-4 py-8 text-center mx-2 text-2xl  bg-red-600 rounded-xl mt-10 text-white z-10"
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.8, type: 'spring' }}

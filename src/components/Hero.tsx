@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { motion, spring } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const headingVariant = {
   hidden: {
@@ -44,7 +44,7 @@ export const Hero = () => {
             </motion.h1>
             <motion.div className="flex gap-2 mx-5" variants={headingVariant}>
               <button className="btn w-36 md:w-52 text-base md:text-lg bg-greener border-white rounded-lg  hover:bg-transparent hover:backdrop-blur-sm text-white">
-                <a href="/reservation">Book a table</a>
+              <NavLink to="/reservation">Book a table</NavLink>
               </button>
               <button className="btn w-36 md:w-52 text-base md:text-lg btn-ghost border-white rounded-lg hover:bg-greener hover:border-white text-white backdrop-blur-sm">
                 <NavLink to="/cart">Order Online</NavLink>
