@@ -20,7 +20,7 @@ export const Reviews = () => {
   return (
     <>
       <motion.div
-        className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20"
+        className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20 max-w-xxl 2xl:max-w-xxxl mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

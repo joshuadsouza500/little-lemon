@@ -19,7 +19,7 @@ const aboutVariant = {
 export const OurTeam = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row-reverse mt-20 mb-10 md:pb-16 pr-1 justify-between">
+      <div className="flex flex-col md:flex-row-reverse mt-20 mb-10 md:pb-16 pr-1 justify-between max-w-xxl 2xl:max-w-xxxl mx-auto">
         <motion.div
           className="flex flex-col gap-3 ml-4 md:pl-10  items-center md:items-baseline md:w-[50%]"
           initial="hidden"

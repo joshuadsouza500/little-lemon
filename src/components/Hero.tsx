@@ -23,9 +23,9 @@ export const Hero = () => {
         id="top"
         className=" bg-cover bg-no-repeat bg-center w-full h-dvh md:h-dvh bg-[url('/assets/bgv.jpg')] md:bg-[url('/assets/bgmain.jpg')] "
       >
-        <div className="inset-0 bg-black bg-opacity-50 h-dvh">
+        <div className="inset-0 bg-black bg-opacity-50 h-dvh ">
           <motion.div
-            className=" mx-2 md:ml-10 pr-2 pt-36 flex flex-col gap-4  md:w-2/4 items-center font-josefin"
+            className=" mx-2 md:ml-10 pr-2 pt-40 flex flex-col gap-4  md:w-2/4 items-center xl:pt-52 font-josefin max-w-xxl 2xl:max-w-xxxl"
             initial="hidden"
             animate="visible"
             viewport={{ once: true }}
@@ -44,7 +44,7 @@ export const Hero = () => {
             </motion.h1>
             <motion.div className="flex gap-2 mx-5" variants={headingVariant}>
               <button className="btn w-36 md:w-52 text-base md:text-lg bg-greener border-white rounded-lg  hover:bg-transparent hover:backdrop-blur-sm text-white">
-              <NavLink to="/reservation">Book a table</NavLink>
+                <NavLink to="/reservation">Book a table</NavLink>
               </button>
               <button className="btn w-36 md:w-52 text-base md:text-lg btn-ghost border-white rounded-lg hover:bg-greener hover:border-white text-white backdrop-blur-sm">
                 <NavLink to="/cart">Order Online</NavLink>

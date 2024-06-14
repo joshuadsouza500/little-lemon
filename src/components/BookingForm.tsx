@@ -34,7 +34,7 @@ export const BookingForm = ({ availableTimes, updateTimes, submitData }) => {
   }
 
   return (
-    <>
+    <main className=" max-w-xxl 2xl:max-w-xxxl mx-auto">
       <div className="pt-20 md:pt-24 text-center">
         <h1 className="font-alex text-golden text-6xl pt-6 lg:text-7xl text-center pb-6 pr-4">
           Book A Table
@@ -77,7 +77,7 @@ export const BookingForm = ({ availableTimes, updateTimes, submitData }) => {
                 id="time"
                 className="select select-bordered w-full max-w-xs"
               >
-                {availableTimes.map((time: any, index: any) => (
+                {availableTimes.map((time: number | string, index: number) => (
                   <option key={index} value={time}>
                     {time}
                   </option>
@@ -153,6 +153,6 @@ export const BookingForm = ({ availableTimes, updateTimes, submitData }) => {
           </div>
         </form>
       </div>
-    </>
+    </main>
   )
 }

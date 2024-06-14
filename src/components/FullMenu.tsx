@@ -19,8 +19,7 @@ const menuVariant = {
 
 interface props {
   id: number
-  img: string | undefined
-
+  img?: string
   title: string
   para: string
   ing: string
@@ -31,8 +30,8 @@ export const FullMenu = ({ menuItems }) => {
   const navigate = useNavigate()
 
   return (
-    <>
-      <div className="pt-20 md:pt-28">
+    <main className="bg-gradient-to-br from-base-100 to-teal-50">
+      <div className="pt-20 md:pt-28 ">
         <motion.h1
           className="font-alex text-golden text-6xl lg:text-7xl text-center pb-6 pr-4"
           initial={{ y: 10, opacity: 0 }}
@@ -43,28 +42,26 @@ export const FullMenu = ({ menuItems }) => {
           Menu
         </motion.h1>
       </div>
-      <section className=" bg-gradient-to-br from-base-100 to-teal-50">
-        <div className="p-5 bg-greener bg-opacity-90 mb-5 md:mb-10">
-          <ul className="flex justify-around text-white font-josefin text-base md:text-lg scroll-smooth gap-4">
-            <li className="hover:scale-105 hover:text-golden scroll-smooth">
-              <a href="#specials">Specials</a>
-            </li>
-            <li className="hover:scale-105 hover:text-golden">
-              
-              <a href="#starters">Starters</a>
-            </li>
-            <li className="hover:scale-105 hover:text-golden">
-              <a href="#mains">Mains</a>
-            </li>
-            <li className="hover:scale-105 hover:text-golden">
-              <a href="#desserts">Desserts</a>
-            </li>
-            <li className="hover:scale-105 hover:text-golden">
-              <a href="#drinks">Drinks</a>
-            </li>
-          </ul>
-        </div>
-
+      <div className="p-5 bg-greener bg-opacity-90 mb-5 md:mb-10">
+        <ul className="flex justify-around text-white font-josefin text-base md:text-lg scroll-smooth gap-4">
+          <li className="hover:scale-105 hover:text-golden scroll-smooth">
+            <a href="#specials">Specials</a>
+          </li>
+          <li className="hover:scale-105 hover:text-golden">
+            <a href="#starters">Starters</a>
+          </li>
+          <li className="hover:scale-105 hover:text-golden">
+            <a href="#mains">Mains</a>
+          </li>
+          <li className="hover:scale-105 hover:text-golden">
+            <a href="#desserts">Desserts</a>
+          </li>
+          <li className="hover:scale-105 hover:text-golden">
+            <a href="#drinks">Drinks</a>
+          </li>
+        </ul>
+      </div>
+      <section className="  max-w-xxl 2xl:max-w-xxxl mx-auto">
         <div id="specials" className="px-1 py-5">
           <motion.h1
             className="font-josefin text-golden text-5xl lg:text-6xl text-start ml-4 md:ml-20 pb-6 pr-2 font-semibold"
@@ -168,7 +165,6 @@ export const FullMenu = ({ menuItems }) => {
                   </p>
                   <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 pt-1 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
-      
                       ${item.price}
                     </h6>
                     <button
@@ -355,6 +351,6 @@ export const FullMenu = ({ menuItems }) => {
           </div>
         </div>
       </section>
-    </>
+    </main>
   )
 }

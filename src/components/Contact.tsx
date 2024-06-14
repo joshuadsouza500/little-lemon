@@ -19,7 +19,7 @@ const contactVariant = {
 export const Contact = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row  pt-20 pb-10 pr-2 justify-between">
+      <div className="flex flex-col md:flex-row  pt-20 pb-10 pr-2 justify-between max-w-xxl 2xl:max-w-xxxl mx-auto">
         <motion.div
           className="flex flex-col gap-3 ml-8 md:ml-28 pr-2  md:pr-0 items-start"
           initial="hidden"
@@ -90,7 +90,6 @@ export const Contact = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           ></motion.img>
-          
         </div>
       </div>
     </>

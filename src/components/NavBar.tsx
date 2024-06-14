@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useCartContext } from '../context/CartContext'
-import {  motion } from 'framer-motion'
+import { motion } from 'framer-motion'
+
 export const NavBar = () => {
   const { cartQuantity } = useCartContext()
-
   const [colour, setcolour] = useState(false)
-//funcion to change colour on scroll //
+  //funcion to change colour on scroll //
   const changeColour = () => {
-    if(window.scrollY >= 80)
-       setcolour(true)
-      else
-      setcolour(false)
+    if (window.scrollY >= 80) setcolour(true)
+    else setcolour(false)
   }
   window.addEventListener('scroll', changeColour)
 
   return (
     <motion.nav
-    className={colour? "bg-base-100 p-1 md:p-2 border-b border-b-golden w-full fixed z-20" : "backdrop-blur-sm p-2 w-full fixed z-20"}
-      
+      className={
+        colour
+          ? 'bg-base-100 p-1 md:p-2 border-b border-b-golden w-full fixed z-20'
+          : 'backdrop-blur-sm p-2 w-full fixed z-20'
+      }
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ staggerChildren: 0.2, duration: 0.5 }}
@@ -110,7 +111,6 @@ export const NavBar = () => {
             tabIndex={0}
             className="menu menu-lg dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52 "
           >
-            
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

@@ -18,7 +18,7 @@ const aboutVariant = {
 export const OurStory = () => {
   return (
     <>
-      <div className="pb-4 md:pb-10 pt-5">
+      <div className="pb-4 md:pb-10 pt-5 max-w-xxl 2xl:max-w-xxxl mx-auto">
         <motion.div
           className="pt-20 md:pt-24 text-center"
           initial="hidden"
@@ -62,7 +62,7 @@ export const OurStory = () => {
               that holds a special place in the community. Founded by our family
               50 years ago, our restaurant has been a cherished gathering spot
               for those seeking the flavours of traditional Mediterranean
-              cuisine.<br></br>   As a family-owned business, every dish that
+              cuisine.<br></br> As a family-owned business, every dish that
               leaves our kitchen carries with it the warmth and charm of our
               heritage. Our commitment to preserving the authenticity of
               traditional Mediterranean flavours is at the heart of everything
@@ -74,7 +74,7 @@ export const OurStory = () => {
             <motion.img
               src="/assets/seating2new.jpg"
               width={500}
-              className='rounded-md'
+              className="rounded-md"
               initial={{ filter: 'blur(4px)' }}
               whileInView={{ filter: 'blur(0px)' }}
               transition={{ duration: 1 }}

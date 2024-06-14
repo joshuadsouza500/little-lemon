@@ -47,7 +47,7 @@ export const Recommended = ({ menuItems }) => {
         </div>
       </div>
 
-      <div className=" text-blackish font-josefin mb-16">
+      <div className=" text-blackish font-josefin mb-16  max-w-xxl 2xl:max-w-xxxl mx-auto">
         <motion.div
           className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
           initial="hidden"

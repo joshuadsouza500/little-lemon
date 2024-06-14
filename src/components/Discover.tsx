@@ -20,7 +20,7 @@ const discoverVariant = {
 export const Discover = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row-reverse pt-20 pb-10 md:pb-16 md:gap-32 pr-2">
+      <div className="flex flex-col md:flex-row-reverse pt-20 pb-10 md:pb-16 md:gap-32  pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto ">
         <motion.div
           className="flex flex-col gap-3 ml-4 mr-2 md:pl-16   md:pr-0 items-center md:items-baseline lg:w-[50%]"
           initial="hidden"
@@ -62,7 +62,7 @@ export const Discover = () => {
           </motion.button>
         </motion.div>
 
-        <div className="overflow-hidden py-2 self-center md:self-auto mt-6 md:mt-2  w-mid ml-2 bg-greener rounded-2xl shadow-2xl px-2">
+        <div className="overflow-hidden py-2 self-center md:self-auto mt-6 md:mt-2  w-mid xl:w-[400px] ml-2 bg-greener rounded-2xl shadow-2xl px-2">
           <motion.div className=" flex items-center gap-3 animate-slide ">
             <img src="/assets/newfettucine (1).png" className="w-full " />
             <img src="/assets/newplate .png" className="w-full " />

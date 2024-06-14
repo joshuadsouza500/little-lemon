@@ -19,7 +19,7 @@ const aboutVariant = {
 export const About = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row pt-20 pb-10 pr-2">
+      <div className="flex flex-col md:flex-row pt-20 pb-10 pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto">
         <motion.div
           className="flex flex-col gap-3 ml-4 md:ml-20 mr-2 md:pr-0 items-center md:items-start"
           initial="hidden"
@@ -65,7 +65,7 @@ export const About = () => {
           <motion.img
             src="/assets/ABout.jpg"
             width={2000}
-            className='rounded-md'
+            className="rounded-md"
             alt="Restaurant image"
             initial={{ filter: 'blur(4px)' }}
             whileInView={{ filter: 'blur(0px)' }}

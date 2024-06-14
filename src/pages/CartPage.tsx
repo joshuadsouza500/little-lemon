@@ -6,11 +6,12 @@ import { motion } from 'framer-motion'
 
 export const CartPage = () => {
   return (
-    <motion.div className="flex flex-col min-h-screen"
-        initial={{ y: 10 }}
-        animate={{ y : 0}}
-        exit={{ y: -10,opacity:0 }}
-        transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+    <motion.div
+      className="flex flex-col min-h-screen "
+      initial={{ y: 10 }}
+      animate={{ y: 0 }}
+      exit={{ y: -10, opacity: 0 }}
+      transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
     >
       <Cart />
       <div className="mt-auto">

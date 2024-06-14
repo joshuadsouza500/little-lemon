@@ -12,9 +12,9 @@ export const Cart = () => {
     isEmpty,
     isAdded,
   } = useCartContext()
-//IMporting the function using context//
+  //IMporting the function using context//
   return (
-    <>
+    <main>
       <div className="pt-20 ">
         <motion.h1
           className=" text-blackish font-bold text-6xl lg:text-7xl text-center pb-2 pt-4"
@@ -30,7 +30,7 @@ export const Cart = () => {
       {/* Cart Items 
       mapping over the cart to display the items */}
 
-      <div className="p-1 mb-16 flex flex-col justify-center items-center font-josefin">
+      <div className="p-1 mb-16 flex flex-col justify-center items-center font-josefin   max-w-xxl 2xl:max-w-xxxl mx-auto">
         {cart.map((cart) => (
           <div
             key={cart.id}
@@ -111,6 +111,6 @@ export const Cart = () => {
           </button>
         </div>
       </div>
-    </>
+    </main>
   )
 }
