@@ -24,16 +24,16 @@ export const Home = () => {
         <h2 className="text-golden font-semibold text-center text-5xl pb-8">
           Book your Table
         </h2>
-        <section className="flex flex-col gap-y-3 gap-x-2 items-center justify-center max-w-4xl">
+        <section className="flex flex-col gap-y-3 gap-x-2 items-center justify-center max-w-4xl mx-auto">
           <div className="flex gap-x-2 w-full">
             {' '}
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm text-golden/30 rounded"
               type="date"
               placeholder="Date"
             />
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm text-golden/30 rounded"
               type="time"
               placeholder="Time"
             />
@@ -41,18 +41,18 @@ export const Home = () => {
           <div className="flex gap-x-2 w-full">
             {' '}
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm text-golden/30 rounded"
               type="number"
               placeholder="Number of Guests"
             />
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm text-golden/30 rounded"
               type="email"
               placeholder="Email"
             />
           </div>
           <input
-            className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm w-[70%]"
+            className="border-golden/40 border-[0.5px] py-8 px-4 bg-transparent backdrop-blur-sm text-golden/30 rounded w-[60%]"
             type="text"
             placeholder="Message"
           />
