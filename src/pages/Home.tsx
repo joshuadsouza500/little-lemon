@@ -20,39 +20,39 @@ export const Home = () => {
       <Hero />
       <About />
       <Discover />
-      <div className="py-6 bg-Dgreen h-auto w-full ">
+      <div className="py-12 bg-Dgreen h-auto w-full ">
         <h2 className="text-golden font-semibold text-center text-5xl pb-8">
           Book your Table
         </h2>
-        <section className="flex flex-col gap-y-3 gap-x-2 items-center justify-center">
-          <div className="flex gap-x-2">
+        <section className="flex flex-col gap-y-3 gap-x-2 items-center justify-center max-w-4xl">
+          <div className="flex gap-x-2 w-full">
             {' '}
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
               type="date"
               placeholder="Date"
             />
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
               type="time"
               placeholder="Time"
             />
           </div>
-          <div>
+          <div className="flex gap-x-2 w-full">
             {' '}
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
               type="number"
               placeholder="Number of Guests"
             />
             <input
-              className="border-golden/40 border-[0.5px] py-2 px-1"
+              className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm"
               type="email"
               placeholder="Email"
             />
           </div>
           <input
-            className="border-golden/40 border-[0.5px] py-2 px-1 w-[70%]"
+            className="border-golden/40 border-[0.5px] py-2 px-1 bg-transparent backdrop-blur-sm w-[70%]"
             type="text"
             placeholder="Message"
           />
