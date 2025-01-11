@@ -26,8 +26,8 @@ export default {
         },
       },
       spacing: {
-        xxl: '1300px',
-        xxxl: '1400px',
+        xxl: '1280px',
+        xxxl: '1440px',
       },
     },
   },
