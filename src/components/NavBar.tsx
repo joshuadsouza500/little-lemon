@@ -76,7 +76,7 @@ export const NavBar = () => {
                 to="/cart"
                 className=" aria-[current=page]:border-b-green-700  aria-[current=page]:border-b-2"
               >
-                <img className="-mt-3" src="/assets/download.svg"></img>
+                <img className="-mt-3 " src="/assets/download.svg"></img>
               </NavLink>
             </li>
           </ul>
