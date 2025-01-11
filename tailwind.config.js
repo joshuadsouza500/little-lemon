@@ -7,6 +7,7 @@ export default {
         golden: '#E4B44E',
         blackish: '#333333',
         greener: '#284F2A',
+        Dgreen: '#03130E',
       },
       fontFamily: {
         josefin: ['Josefin Sans', 'sans-serif'],

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Footer = () => {
   return (
-    <footer className="bg-[url('/assets/footer.jpg')] bottom-0">
+    <footer className="bg-[url('/assets/footer.jpg')] bottom-0 bg-no-repeat bg-center">
       <div className=" font-josefin pt-4 pb-1 flex justify-between px-6 md:px-40 items-center">
         <div>
           <ul
