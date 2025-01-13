@@ -19,7 +19,7 @@ const aboutVariant = {
 export const About = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row pt-20 pb-10 pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto">
+      <div className="flex flex-col md:flex-row pt-20 pb-10 pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto ">
         <motion.div
           className="flex flex-col gap-2 ml-4 md:ml-20 mr-2 md:pr-0 items-center md:items-start"
           initial="hidden"
