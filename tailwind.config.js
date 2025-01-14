@@ -10,7 +10,7 @@ export default {
         Dgreen: '#1A4D3A',
         /*#
 #1A4D3A
-#
+#1B3A20
 */
       },
       fontFamily: {
