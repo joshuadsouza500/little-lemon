@@ -17,8 +17,8 @@ export const NavBar = () => {
     <motion.nav
       className={
         colour
-          ? 'bg-base-100 p-1 md:p-2 border-b border-b-golden w-full fixed z-20'
-          : 'backdrop-blur-sm p-2 w-full fixed z-20'
+          ? 'bg-white p-1 md:p-2 border-b border-b-golden w-full fixed z-20'
+          : 'backdrop-blur-sm p-1 w-full fixed z-20'
       }
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -31,7 +31,7 @@ export const NavBar = () => {
             src="/assets/littlelicon.png"
             width={200}
             height={50}
-            className="ml-1 md:ml-12"
+            className=" md:ml-12 max-md:-ml-2"
           />
         </NavLink>
         {/* lg: navbar*/}

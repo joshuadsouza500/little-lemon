@@ -24,11 +24,10 @@ export const Home = () => {
 
       <About />
       <Discover />
-      <Booking />
+      {/**      <Hero /><Booking />
       <Reviews />
       <Contact />
-      <Footer />
-      {/**      <Hero /> */}
+      <Footer /> */}
     </motion.main>
   )
 }

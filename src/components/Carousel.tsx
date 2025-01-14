@@ -9,7 +9,7 @@ export function Carousel() {
     {
       src: '/assets/Hero1.jpeg',
       alt: 'Delicious layered dessert with whipped cream',
-      title: 'Experience Culinary Excellence',
+      title: 'A Taste of Home in Every Dish',
     },
     {
       src: '/assets/Hero2.jpeg',
@@ -34,17 +34,14 @@ export function Carousel() {
                 src={image.src}
                 className="h-full object-cover w-full "
               />
-              <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute inset-0 bg-black/25" />
               <div className="absolute inset-0 flex items-center justify-center flex-col gap-y-6">
-                <h1 className="text-4xl  md:w-[60%] md:text-6xl font-bold text-golden text-center px-4">
+                <h1 className="text-4xl font-serif  md:w-[60%] xl:w-[45%] 2xl:w-[40%] md:text-6xl 2xl:text-7xl  font-medium text-white text-center px-4">
                   {image.title}
                 </h1>
                 <div className="flex gap-2 mx-5">
-                  <button className=" py-2  px-4 text-base md:text-lg bg-greener border-white rounded-lg  hover:bg-transparent hover:backdrop-blur-sm text-white">
-                    <NavLink to="/reservation">Book a table</NavLink>
-                  </button>
-                  <button className="py-2  px-4 text-base md:text-lg btn-ghost border-white rounded-lg hover:bg-greener hover:border-white text-white backdrop-blur-sm">
-                    <NavLink to="/cart">Order Online</NavLink>
+                  <button className=" py-2  px-4 text-sm md:text-base bg-white border-white rounded-sm  hover:bg-[#E4B44E] shadow-md text-blackish hover:scale-[.98]">
+                    <NavLink to="/reservation">Book a Table</NavLink>
                   </button>
                 </div>
               </div>
@@ -52,12 +49,12 @@ export function Carousel() {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-4 2xl:bottom-6 right-4 md:right-6 flex gap-2">
+      <div className="absolute bottom-4 2xl:bottom-6 right-[45%]  md:right-6 flex gap-2">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
-            className={`size-3   rounded-full transition-all ${currentIndex == index ? 'bg-white' : 'bg-gray-500'} `}
+            className={`size-3 border-white   rounded-full transition-all ${currentIndex == index ? 'bg-white' : 'bg-white/90 '} `}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
