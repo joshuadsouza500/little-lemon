@@ -2,20 +2,23 @@ import React from 'react'
 
 const Booking = () => {
   return (
-    <div className="py-12 lg:py-20 bg-Dgreen h-auto w-full ">
-      <h2 className="text-golden font-semibold text-center text-5xl pb-8 lg:pb-10 ">
-        Book your Table
+    <div className="py-16 md:py-24 2xl:py-32 bg-Dgreen h-auto w-full ">
+      <h1 className="font-alex text-golden text-6xl lg:text-7xl text-center pr-4 pb-4 -ml-1">
+        Join Us
+      </h1>
+      <h2 className="pr-4 text-4xl text-white font-josefin font-semibold text-center lg:text-6xl pb-8 lg:pb-10 ">
+        Book a Table
       </h2>
       <section className="flex flex-col gap-y-3 lg:gap-y-4  items-center justify-center max-w-sm sm:max-w-lg md:max-w-xl mx-auto px-2 text-golden/40 ">
         <div className="flex gap-x-3 w-full items-center">
           {' '}
           <input
-            className="border-golden/40 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full"
+            className="border-golden/40 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40"
             type="date"
             placeholder="Date"
           />
           <input
-            className="border-golden/40 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full"
+            className="border-golden/40 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40"
             type="time"
             placeholder="Time"
           />
@@ -38,7 +41,7 @@ const Booking = () => {
           type="text"
           placeholder="Message"
         />
-        <button className="ml-1 btn w-40 md:w-44 text-base bg-golden  rounded-lg  hover:bg-greener  text-white">
+        <button className="ml-1 btn w-32 md:w-36 text-base bg-golden  rounded-lg  hover:bg-greener  text-white">
           Book Now
         </button>
       </section>
