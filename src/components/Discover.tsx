@@ -20,9 +20,9 @@ const discoverVariant = {
 export const Discover = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row-reverse pt-20 pb-10 md:pb-16 md:gap-32  pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto ">
+      <div className="flex flex-col lg:flex-row-reverse pt-20 pb-10 lg:pb-16 pr-2 max-w-5xl xl:max-w-xxl 2xl:max-w-xxxl mx-auto  lg:px-4">
         <motion.div
-          className="flex flex-col gap-2 md:gap-3 ml-4 mr-2 md:pl-16   md:pr-0 items-center md:items-baseline lg:w-[50%]"
+          className="flex flex-col gap-2 lg:gap-3 ml-4 mr-2 lg:pl-8 xl:pl-12 lg:pr-0 items-center lg:items-baseline lg:w-1/2 "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -40,30 +40,39 @@ export const Discover = () => {
             Discover
           </motion.h1>
           <motion.h1
-            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish md:w-[90%] text-center md:text-left pb-6"
+            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish lg:w-[90%] text-center lg:text-left pb-6"
             variants={discoverVariant}
           >
             Our Menu
           </motion.h1>
           <motion.p
-            className="font-josefin text-justify text-blackish text-lg w-[95%] md:w-[80%] pb-4"
+            className="font-josefin text-justify text-blackish text-lg  md:w-[80%] pb-4"
             variants={discoverVariant}
           >
             Savor the flavors of the Mediterranean with our thoughtfully crafted
             dishes that showcase the best of both old-world charm and
             contemporary creativity. Our menu is a delicious exploration of
-            traditiona roots, come taste the difference today.
+            traditional roots, come taste the difference today.
           </motion.p>
           <motion.button
-            className="-ml-4 sm:ml-0 text-lg text-golden font-josefin w-[165px]  border-b border-golden hover:text-greener hover:border-greener"
+            className="-ml-4 sm:ml-0 text-lg text-golden font-josefin w-[165px] border-b border-golden hover:text-greener hover:border-greener"
             variants={discoverVariant}
           >
             <NavLink to="/menu">View Our Full Menu</NavLink>
           </motion.button>
         </motion.div>
 
-        <div className=" py-2 self-center md:self-auto mt-6 md:mt-2  w-mid xl:w-[400px] ml-2 bg-greener rounded-2xl shadow-2xl px-2">
-          <img src="/assets/Menu.jpeg" className="h-full w-full " />
+        <div className="w-full lg:w-1/2 px-2 md:px-6 pt-14 md:pt-1 ">
+          <motion.img
+            src="/assets/Menu.jpeg"
+            width={400}
+            className="rounded-md h-72 sm:h-80 lg:h-96 2xl:h-[420px] shadow-md w-full object-cover"
+            alt="Restaurant image"
+            initial={{ filter: 'blur(4px)' }}
+            whileInView={{ filter: 'blur(0px)' }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          />
         </div>
       </div>
     </>

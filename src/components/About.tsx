@@ -19,9 +19,9 @@ const aboutVariant = {
 export const About = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row pt-20 pb-10 pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto ">
+      <div className="flex flex-col lg:flex-row pt-20 pb-10 pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto lg:px-4">
         <motion.div
-          className="flex flex-col gap-2 ml-4 md:ml-20 mr-2 md:pr-0 items-center md:items-start"
+          className="flex flex-col gap-2 ml-4 lg:ml-20 mr-2 md:pr-0 items-center lg:items-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -33,19 +33,19 @@ export const About = () => {
           }}
         >
           <motion.h1
-            className="font-alex text-golden text-5xl lg:text-7xl text-center md:text-left pr-4 -ml-8"
+            className="font-alex text-golden text-5xl lg:text-7xl text-center lg:text-left pr-4 -ml-8"
             variants={aboutVariant}
           >
             Welcome to
           </motion.h1>
           <motion.h1
-            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish md:w-[70%] text-center md:text-left pb-6"
+            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish w-[70%] text-center lg:text-left pb-6"
             variants={aboutVariant}
           >
             Little Lemon Restaurant
           </motion.h1>
           <motion.p
-            className="font-josefin text-justify text-blackish w-[95%] text-lg md:w-[80%] pb-4"
+            className="font-josefin text-justify text-blackish  text-lg md:w-[80%] pb-4"
             variants={aboutVariant}
           >
             We are a family-owned Mediterranean Restaurant focused on
@@ -61,11 +61,11 @@ export const About = () => {
             Meet the team
           </motion.a>
         </motion.div>
-        <div className="px-5 pt-14 md:pt-1 ">
+        <div className="px-2 md:px-6 pt-14 md:pt-1  ">
           <motion.img
             src="/assets/ABout.jpg"
             width={2000}
-            className="rounded-md"
+            className="rounded-md md:h-96 lg:h-full"
             alt="Restaurant image"
             initial={{ filter: 'blur(4px)' }}
             whileInView={{ filter: 'blur(0px)' }}
