@@ -7,10 +7,10 @@ export default {
         golden: '#E4B44E',
         blackish: '#333333',
         greener: '#284F2A',
-        Dgreen: '#1B3A20',
+        Dgreen: '#1A4D3A',
         /*#
-#1A4D3A
-#1B3A20
+#1A4D3A 
+#1B3A20 more closer to greenr but a bit more subtle
 */
       },
       fontFamily: {

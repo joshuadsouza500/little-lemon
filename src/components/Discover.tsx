@@ -62,17 +62,8 @@ export const Discover = () => {
           </motion.button>
         </motion.div>
 
-        <div className="overflow-hidden py-2 self-center md:self-auto mt-6 md:mt-2  w-mid xl:w-[400px] ml-2 bg-greener rounded-2xl shadow-2xl px-2">
-          <motion.div className=" flex items-center gap-3 animate-slide ">
-            <img src="/assets/newfettucine (1).png" className="w-full " />
-            <img src="/assets/newplate .png" className="w-full " />
-            <img
-              src="/assets/newfalafel - removebg-preview (1).png"
-              className="w-full "
-            />
-            <img src="/assets/spanakopita.png" className="w-full " />
-            <img src="/assets/newfettucine (1).png" className="w-full " />
-          </motion.div>
+        <div className=" py-2 self-center md:self-auto mt-6 md:mt-2  w-mid xl:w-[400px] ml-2 bg-greener rounded-2xl shadow-2xl px-2">
+          <img src="Menu.jpeg" className="h-full w-full " />
         </div>
       </div>
     </>
