@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Booking = () => {
   return (
@@ -41,8 +42,8 @@ const Booking = () => {
           type="text"
           placeholder="Message"
         />
-        <button className="ml-1 btn w-32 md:w-36 text-base bg-golden  rounded-lg  hover:bg-greener  text-white">
-          Book Now
+        <button className=" py-2  px-4 text-sm md:text-base bg-golden border-white rounded-sm  hover:bg-[#E4B44E] shadow-md text-white hover:scale-[.98]">
+          <NavLink to="/reservation">Book a Table</NavLink>
         </button>
       </section>
     </div>

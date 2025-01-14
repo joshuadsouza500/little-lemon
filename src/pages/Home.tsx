@@ -21,13 +21,13 @@ export const Home = () => {
       className="bg-white"
     >
       <Carousel />
-
       <About />
       <Discover />
-      {/**      <Hero /><Booking />
+      <Hero />
+      <Booking />
       <Reviews />
       <Contact />
-      <Footer /> */}
+      <Footer /> {/**  */}
     </motion.main>
   )
 }

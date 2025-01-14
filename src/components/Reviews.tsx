@@ -44,7 +44,7 @@ export const Reviews = () => {
           Reviews
         </motion.h1>
         <motion.div className="stack" variants={reviewsVariant}>
-          <div className="rounded-2xl bg-Dgreen w-[90%] sm:w-[75%] py-6 md:py-10 px-8 font-josefin text-white text-center sm:text-xl text-opacity-90">
+          <div className="rounded-2xl bg-Dgreen w-[90%] sm:w-[75%] py-6 md:py-10 px-8 font-josefin text-white text-center sm:text-xl text-opacity-90 2xl:w-[60%]">
             <span className="text-golden">
               &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
             </span>
@@ -56,7 +56,7 @@ export const Reviews = () => {
             </p>
             <h3>Kylie meyer. </h3>
           </div>
-          <div className="rounded-2xl bg-greener w-[90%] sm:w-[75%] py-6 md:py-10 px-8 font-josefin text-white text-center sm:text-xl text-opacity-90">
+          <div className="rounded-2xl bg-greener w-[90%] sm:w-[75%] py-6 md:py-10 px-8 font-josefin text-white text-center sm:text-xl text-opacity-90 2xl:w-[60%]">
             <span className="text-golden">
               &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
             </span>

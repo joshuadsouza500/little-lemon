@@ -19,9 +19,9 @@ const aboutVariant = {
 export const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row pt-20 pb-10 pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto lg:px-4">
+      <div className="flex flex-col lg:flex-row pt-20  pb-10 max-w-6xl   xl:max-w-xxl 2xl:max-w-xxxl mx-auto lg:px-4">
         <motion.div
-          className="flex flex-col gap-2 ml-4 lg:ml-20 mr-2 md:pr-0 items-center lg:items-start"
+          className="flex flex-col gap-2 ml-4 lg:ml-8  mr-2 md:pr-0 items-center lg:items-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

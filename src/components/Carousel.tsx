@@ -40,7 +40,7 @@ export function Carousel() {
                   {image.title}
                 </h1>
                 <div className="flex gap-2 mx-5">
-                  <button className=" py-2  px-4 text-sm md:text-base bg-white border-white rounded-sm  hover:bg-[#E4B44E] shadow-md text-blackish hover:scale-[.98]">
+                  <button className=" py-2  px-4 text-sm md:text-base bg-golden border-white rounded-sm  hover:bg-[#E4B44E] shadow-md text-white hover:scale-[.98]">
                     <NavLink to="/reservation">Book a Table</NavLink>
                   </button>
                 </div>
@@ -49,12 +49,12 @@ export function Carousel() {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-4 2xl:bottom-6 right-[45%]  md:right-6 flex gap-2">
+      <div className="absolute bottom-4 2xl:bottom-6 right-[45%]  md:right-6 2xl:right-14 flex gap-2 2xl:gap-3">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
-            className={`size-3 border-white   rounded-full transition-all ${currentIndex == index ? 'bg-white' : 'bg-white/90 '} `}
+            className={`size-3 2xl:size-3.5 border-white   rounded-full transition-all ${currentIndex == index ? 'bg-white' : 'bg-white/90 '} `}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
