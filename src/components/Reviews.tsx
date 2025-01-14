@@ -18,9 +18,9 @@ const reviewsVariant = {
 
 export const Reviews = () => {
   return (
-    <>
+    <div className="relative">
       <motion.div
-        className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20 max-w-xxl 2xl:max-w-xxxl mx-auto"
+        className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20 max-w-xxl 2xl:max-w-xxxl mx-auto "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -70,6 +70,10 @@ export const Reviews = () => {
           </div>
         </motion.div>
       </motion.div>
-    </>
+      <img
+        src="/assets/pepper.png"
+        className="size-72 2xl:size-96 absolute -left-32 bottom-10 opacity-15"
+      />
+    </div>
   )
 }
