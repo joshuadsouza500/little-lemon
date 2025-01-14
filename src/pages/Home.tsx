@@ -9,6 +9,7 @@ import { Reviews } from '../components/Reviews'
 import { Footer } from '../components/Footer'
 import { motion } from 'framer-motion'
 import Booking from '../components/Booking'
+import { Carousel } from '../components/Carousel'
 
 export const Home = () => {
   return (
@@ -19,13 +20,14 @@ export const Home = () => {
       transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
       className="bg-white"
     >
-      <Hero />
+      <Carousel />
+
       <About />
       <Discover />
-      <Booking />
+      {/**      <Hero /><Booking />
       <Reviews />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </motion.main>
   )
 }

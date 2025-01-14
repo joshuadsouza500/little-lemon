@@ -129,3 +129,71 @@ export const NavBar = () => {
     </motion.nav>
   )
 }
+
+{
+  /**import React, { useState } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+
+const images = [
+  {
+    src: '/assets/Hero1.jpeg',
+    alt: 'Delicious layered dessert with whipped cream',
+    title: 'Experience Culinary Excellence',
+  },
+  {
+    src: '/assets/Hero2.jpeg',
+    alt: 'Tiramisu dessert presentation',
+    title: 'Experience Culinary Excellence',
+  },
+  {
+    src: '/assets/Hero3.jpeg',
+    alt: 'Artistic cake presentation from above',
+    title: '40% off on all orders on Fridays',
+  },
+]
+
+export function Carousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel()
+
+  const getDotIndex = (index) => {
+    if (!emblaApi) return
+    return emblaApi.selectedScrollSnap()
+  }
+  return (
+    <div className="embla overflow-hidden pt-20 " ref={emblaRef}>
+      <div className=" h-[85vh]   flex w-full relative">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className=" min-w-full w-full h-full flex-none relative "
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="object-fill w-full h-full"
+            />
+            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-4xl md:text-6xl font-bold text-white text-center px-4">
+                {image.title}
+              </h1>
+            </div>
+          </div>
+        ))}
+
+        <div className="absolute bottom-4 right-4 flex gap-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => emblaApi?.scrollTo(index)}
+              className={`w-3 h-3 rounded-full ${getDotIndex(index) === index ? 'bg-white' : 'bg-gray-400'}`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+ */
+}

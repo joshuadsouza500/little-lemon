@@ -9,16 +9,16 @@ const Booking = () => {
       <h2 className="pr-2 text-4xl text-white font-josefin font-semibold text-center lg:text-6xl pb-8 lg:pb-10 ">
         Book a Table
       </h2>
-      <section className="flex flex-col gap-y-3 lg:gap-y-4  items-center justify-center max-w-sm sm:max-w-lg md:max-w-xl 2xl:max-w-3xl mx-auto px-2 text-golden/40 ">
-        <div className="flex gap-x-3 w-full items-center text-golden/30">
+      <section className="flex flex-col gap-y-3 lg:gap-y-4  items-center justify-center max-w-sm sm:max-w-lg md:max-w-xl 2xl:max-w-3xl mx-auto px-2 text-golden/50 ">
+        <div className="flex gap-x-3 w-full items-center">
           {' '}
           <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40"
+            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40 text-golden/50 "
             type="date"
             placeholder="Date"
           />
           <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40"
+            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40 text-golden/50 "
             type="time"
             placeholder="Time"
           />
