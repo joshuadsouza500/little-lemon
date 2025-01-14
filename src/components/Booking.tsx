@@ -6,7 +6,7 @@ const Booking = () => {
       <h1 className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-4 -ml-1">
         Join Us
       </h1>
-      <h2 className="pr-2 text-4xl text-blackish font-josefin font-semibold text-center lg:text-6xl pb-8 lg:pb-10 ">
+      <h2 className="pr-2 text-4xl text-white font-josefin font-semibold text-center lg:text-6xl pb-8 lg:pb-10 ">
         Book a Table
       </h2>
       <section className="flex flex-col gap-y-3 lg:gap-y-4  items-center justify-center max-w-sm sm:max-w-lg md:max-w-xl mx-auto px-2 text-golden/40 ">

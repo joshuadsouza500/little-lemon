@@ -63,7 +63,7 @@ export const Discover = () => {
         </motion.div>
 
         <div className=" py-2 self-center md:self-auto mt-6 md:mt-2  w-mid xl:w-[400px] ml-2 bg-greener rounded-2xl shadow-2xl px-2">
-          <img src="Menu.jpeg" className="h-full w-full " />
+          <img src="/Menu.jpeg" className="h-full w-full " />
         </div>
       </div>
     </>
