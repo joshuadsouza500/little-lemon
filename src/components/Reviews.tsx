@@ -32,7 +32,7 @@ export const Reviews = () => {
         }}
       >
         <motion.h1
-          className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-4 -ml-1"
+          className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-2 lg:pb-4 -ml-1"
           variants={reviewsVariant}
         >
           Customer

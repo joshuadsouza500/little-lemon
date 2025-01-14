@@ -33,7 +33,7 @@ export const About = () => {
           }}
         >
           <motion.h1
-            className="font-alex text-golden text-6xl lg:text-7xl text-center md:text-left pr-4 -ml-8"
+            className="font-alex text-golden text-5xl lg:text-7xl text-center md:text-left pr-4 -ml-8"
             variants={aboutVariant}
           >
             Welcome to

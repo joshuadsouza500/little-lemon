@@ -2,8 +2,8 @@ import React from 'react'
 
 const Booking = () => {
   return (
-    <div className="py-14 md:py-24 2xl:py-32 bg-Dgreen h-auto w-full ">
-      <h1 className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-4 -ml-1">
+    <div className=" pt-14 pb-20 md:pt-24 md:pb-32  2xl:pb-40 bg-Dgreen h-auto w-full ">
+      <h1 className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-2 lg:pb-4 -ml-1">
         Join Us
       </h1>
       <h2 className="pr-2 text-4xl text-white font-josefin font-semibold text-center lg:text-6xl pb-8 lg:pb-10 ">

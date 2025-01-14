@@ -31,8 +31,8 @@ export const NavBar = () => {
             src="/assets/littlelicon.png"
             width={200}
             height={50}
-            className="ml-2 md:ml-12"
-          ></img>
+            className="ml-1 md:ml-12"
+          />
         </NavLink>
         {/* lg: navbar*/}
 

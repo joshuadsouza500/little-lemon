@@ -22,7 +22,7 @@ export const Discover = () => {
     <>
       <div className="flex flex-col md:flex-row-reverse pt-20 pb-10 md:pb-16 md:gap-32  pr-2 max-w-xxl 2xl:max-w-xxxl mx-auto ">
         <motion.div
-          className="flex flex-col gap-3 ml-4 mr-2 md:pl-16   md:pr-0 items-center md:items-baseline lg:w-[50%]"
+          className="flex flex-col gap-2 md:gap-3 ml-4 mr-2 md:pl-16   md:pr-0 items-center md:items-baseline lg:w-[50%]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -34,7 +34,7 @@ export const Discover = () => {
           }}
         >
           <motion.h1
-            className="font-alex text-golden text-6xl lg:text-7xl text-center pr-4"
+            className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4"
             variants={discoverVariant}
           >
             Discover
@@ -63,7 +63,7 @@ export const Discover = () => {
         </motion.div>
 
         <div className=" py-2 self-center md:self-auto mt-6 md:mt-2  w-mid xl:w-[400px] ml-2 bg-greener rounded-2xl shadow-2xl px-2">
-          <img src="/Menu.jpeg" className="h-full w-full " />
+          <img src="/assets/Menu.jpeg" className="h-full w-full " />
         </div>
       </div>
     </>
