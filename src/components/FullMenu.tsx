@@ -31,7 +31,7 @@ export const FullMenu = ({ menuItems }) => {
 
   return (
     <main className="bg-white ">
-      <div className="pt-20 md:pt-28 ">
+      <div className="pt-16 md:pt-28 ">
         <motion.h1
           className="font-alex text-golden text-6xl lg:text-7xl text-center pb-6 pr-4"
           initial={{ y: 10, opacity: 0 }}
@@ -42,7 +42,7 @@ export const FullMenu = ({ menuItems }) => {
           Menu
         </motion.h1>
       </div>
-      <div className="p-5 bg-greener bg-opacity-90 mb-5 md:mb-10">
+      <div className="p-4 bg-greener bg-opacity-90 mb-5 md:mb-10">
         <ul className="flex justify-around text-white font-josefin text-base md:text-lg scroll-smooth gap-4">
           <li className="hover:scale-105 hover:text-golden scroll-smooth">
             <a href="#specials">Specials</a>
@@ -76,7 +76,7 @@ export const FullMenu = ({ menuItems }) => {
 
         <div className=" text-blackish font-josefin  ">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20 "
+            className="grid  md:grid-cols-2 gap-x-5 md:gap-8 mx-2 md:ml-14 lg:ml-20 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -156,6 +156,10 @@ export const FullMenu = ({ menuItems }) => {
                 className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
+                onClick={() => {
+                  const path = `/${item.id}`
+                  navigate(path)
+                }}
               >
                 <div className="bg-greener rounded-lg self-center py-5">
                   <figure className="">
@@ -172,7 +176,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="btn btn-sm  hover:scale-105 bg-golden hover:bg-greener text-white "
+                      className="px-2.5 py-1.5 hover:scale-[.98] bg-golden hover:bg-greener text-white "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -216,6 +220,10 @@ export const FullMenu = ({ menuItems }) => {
                 className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
+                onClick={() => {
+                  const path = `/${item.id}`
+                  navigate(path)
+                }}
               >
                 <div className="bg-greener rounded-lg self-center py-5">
                   <figure className="">
@@ -232,7 +240,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="btn btn-sm  hover:scale-105 bg-golden hover:bg-greener text-white "
+                      className="px-2.5 py-1.5 hover:scale-[.98] bg-golden hover:bg-greener text-white "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -276,6 +284,10 @@ export const FullMenu = ({ menuItems }) => {
                 variants={menuVariant}
                 className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
                 key={item.id}
+                onClick={() => {
+                  const path = `/${item.id}`
+                  navigate(path)
+                }}
               >
                 <div className="bg-greener rounded-lg self-center py-5">
                   <figure className="">
@@ -292,7 +304,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="btn btn-sm  hover:scale-105 bg-golden hover:bg-greener text-white "
+                      className="px-2.5 py-1.5 hover:scale-[.98] bg-golden hover:bg-greener text-white "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useCartContext } from '../context/CartContext'
 import { motion } from 'framer-motion'
+import { ChevronLeft, ChevronLeftIcon, ChevronRight } from 'lucide-react'
 
 export const Dish = ({ menuItems }) => {
   //TO get the itemid from url param and check if it is in cart//
@@ -40,7 +41,7 @@ export const Dish = ({ menuItems }) => {
               }}
               className="p-1 text-2xl btn-circle bg-greener m-1 md:m-2"
             >
-              &larr; {/* Left Arrow */}
+              <ChevronLeft className="size-6" />
             </button>
             <div className="md:bg-greener py-2 rounded-lg flex items-center px-5">
               <img src={menuItem.img} alt="food item image" className="p-1" />
@@ -52,9 +53,9 @@ export const Dish = ({ menuItems }) => {
                   navigate(path)
                 }
               }}
-              className="p-1 text-2xl btn-circle bg-greener m-1 md:m-2"
+              className="  btn-circle bg-greener m-1 md:m-2"
             >
-              &rarr; {/* Right Arrow */}
+              <ChevronRight className="size-6" />
             </button>
           </div>
 
@@ -88,7 +89,7 @@ export const Dish = ({ menuItems }) => {
               </h6>
 
               <button
-                className=" px-6 xl:px-10 py-2 rounded-md bg-golden hover:bg-greener text-white text-xl hover:scale-[.98] "
+                className="ml-1 px-6 xl:px-10 py-2 rounded-md bg-golden hover:bg-greener text-white text-xl hover:scale-[.98] "
                 onClick={() => {
                   handleCart(menuItem)
                 }}
