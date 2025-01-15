@@ -30,7 +30,28 @@ export const FullMenu = ({ menuItems }) => {
   const navigate = useNavigate()
 
   return (
-    <main className="bg-white ">
+    <main className="bg-white relative overflow-hidden">
+      <img
+        src="/assets/radish.png"
+        className="size-60 md:size-72 2xl:size-96 absolute -right-32 lg:-right-32 top-36 md:top-36 opacity-15 "
+      />
+      <img
+        src="/assets/Brock.png"
+        className="size-60 md:size-72 2xl:size-96 absolute -left-28 2xl:-left-32 top-[25%] opacity-10 rotate-45"
+      />
+      <img
+        src="/assets/Leave.png"
+        className="size-60 md:size-72 2xl:size-96 absolute -right-28 2xl:-right-32 top-[45%] opacity-10 -rotate-12"
+      />
+      <img
+        src="/assets/eggplant.png"
+        className="size-60 md:size-72 2xl:size-96 absolute -left-28 2xl:-left-32 top-[63%] opacity-10 rotate-180"
+      />
+      <img
+        src="/assets/pepper.png"
+        className="size-60 md:size-72 2xl:size-96 absolute -right-28 lg:-right-32 top-[75%] opacity-10 rotate-45"
+      />
+
       <div className="pt-20 md:pt-28 ">
         <motion.h1
           className="font-alex text-golden text-6xl lg:text-7xl text-center pb-6 pr-4"
@@ -89,7 +110,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 3).map((item: props) => (
               <motion.div
-                className="max-md:mx-auto  card card-side bg-white shadow-xl max-w-[375px] lg:w-zz hover:scale-[1.005] "
+                className="max-md:mx-auto  card card-side bg-white shadow-xl max-w-[375px] lg:max-w-zz  hover:scale-[1.005] "
                 variants={menuVariant}
                 key={item.id}
                 onClick={() => {
@@ -104,7 +125,7 @@ export const FullMenu = ({ menuItems }) => {
                 </div>
                 <div className="pl-2 self-center">
                   <h2 className="card-title p-2">{item.title}</h2>
-                  <p className="pl-2 text-sm pb-3 font-normal leading-none md:leading-tight w-[93%]">
+                  <p className="pl-2 text-sm pb-3  text-blackish/90 leading-none md:leading-tight w-[93%]">
                     {item.para}
                   </p>
                   <div className="grid grid-cols-2 sm:place-items-start mr-3 mb-2 items-center">
@@ -112,7 +133,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2 py-1.5 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
+                      className="px-1 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -153,7 +174,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(6, 9).map((item: props) => (
               <motion.div
-                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:max-w-zz  hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
                 onClick={() => {
@@ -176,7 +197,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2.5 py-1.5 hover:scale-[.98] rounded-md bg-golden hover:bg-greener text-white "
+                      className="px-1 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -217,7 +238,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 6).map((item: props) => (
               <motion.div
-                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:max-w-zz  hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
                 onClick={() => {
@@ -240,7 +261,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2.5 py-1.5 hover:scale-[.98] rounded-md bg-golden hover:bg-greener text-white "
+                      className="px-1 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -282,7 +303,7 @@ export const FullMenu = ({ menuItems }) => {
             {menuItems.slice(9, 12).map((item: props) => (
               <motion.div
                 variants={menuVariant}
-                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:max-w-zz  hover:scale-[1.005] "
                 key={item.id}
                 onClick={() => {
                   const path = `/${item.id}`
@@ -304,7 +325,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2.5 py-1.5 rounded-md hover:scale-[.98] bg-golden hover:bg-greener text-white "
+                      className="px-1 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -367,6 +388,11 @@ export const FullMenu = ({ menuItems }) => {
           </div>
         </div>
       </section>
+
+      <img
+        src="/assets/Carrot.png"
+        className="size-60 md:size-72 2xl:size-96 absolute -left-28 2xl:-left-32 bottom-28 md:bottom-36 opacity-10 rotate-45 "
+      />
     </main>
   )
 }

@@ -74,7 +74,7 @@ export const Dish = ({ menuItems }) => {
             </h2>
 
             <h6
-              className="pl-2 text-2xl mb-2 font-semibold
+              className="pl-2 text-2xl mb-1.5 md:mb-2 font-semibold
                      leading-normal "
             >
               Ingredients
@@ -96,7 +96,7 @@ export const Dish = ({ menuItems }) => {
               </h6>
 
               <button
-                className="ml-1 px-6 xl:px-10 py-2 rounded-md bg-golden hover:bg-greener text-white text-xl hover:scale-[.98] "
+                className="ml-1.5 px-6 xl:px-10 py-2 rounded-md bg-golden hover:bg-greener text-white text-xl hover:scale-[.98] "
                 onClick={() => {
                   handleCart(menuItem)
                 }}

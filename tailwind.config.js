@@ -19,7 +19,6 @@ export default {
         Heading: ['Fredericka the Great', 'cursive'],
       },
       width: {
-        zz: '30rem',
         mid: '350px',
       },
       animation: {
@@ -31,6 +30,7 @@ export default {
         },
       },
       spacing: {
+        zz: '30rem',
         xxl: '1280px',
         xxxl: '1440px',
       },

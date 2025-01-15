@@ -54,7 +54,7 @@ export function Carousel() {
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
-            className={`size-3 2xl:size-3.5 border-white   rounded-full transition-all ${currentIndex == index ? 'bg-white' : 'bg-white/90 '} `}
+            className={`size-2 md:size-3 2xl:size-3.5 border-white   rounded-full transition-all ${currentIndex == index ? 'bg-white' : 'bg-white/90 '} `}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

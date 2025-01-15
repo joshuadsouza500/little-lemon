@@ -34,7 +34,7 @@ export const Cart = () => {
         {cart.map((cart) => (
           <div
             key={cart.id}
-            className="bg-base-100  shadow-lg rounded-xl flex mt-4 w-[90%] md:w-[60%] gap-4 border-golden border"
+            className="bg-white  shadow-lg rounded-xl flex mt-4 w-[90%] md:w-[60%] gap-4 border-golden border"
           >
             <div className="bg-greener  p-1 rounded-lg w-28 md:w-36">
               <figure>

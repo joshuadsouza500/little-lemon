@@ -94,7 +94,7 @@ export const Contact = () => {
       </div>
       <img
         src="/assets/eggplant.png"
-        className="size-72 2xl:size-96 absolute -right-24 lg:-right-32 top-10 opacity-15 "
+        className="size-64 md:size-72  2xl:size-96 absolute -left-24 xl:-left-32 top-[35%]  opacity-15 "
       />
     </div>
   )

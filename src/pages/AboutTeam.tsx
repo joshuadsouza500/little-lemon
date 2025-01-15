@@ -8,12 +8,12 @@ import { motion } from 'framer-motion'
 export const AboutTeam = () => {
   return (
     <motion.main
-       initial={{ y: 10 }}
-       animate={{ y : 0}}
-       exit={{ y: -10,opacity:0 }}
-       transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+      className="bg-white"
+      initial={{ y: 10 }}
+      animate={{ y: 0 }}
+      exit={{ y: -10, opacity: 0 }}
+      transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
     >
-    
       <OurStory />
       <OurTeam />
       <Footer />

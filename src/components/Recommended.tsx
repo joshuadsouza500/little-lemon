@@ -49,7 +49,7 @@ export const Recommended = ({ menuItems }) => {
 
       <div className=" text-blackish font-josefin mb-16  max-w-xxl 2xl:max-w-xxxl mx-auto ">
         <motion.div
-          className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
+          className="grid  md:grid-cols-2 gap-5 md:gap-8 mx-2 md:ml-14 lg:ml-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -62,7 +62,7 @@ export const Recommended = ({ menuItems }) => {
         >
           {menuItems.slice(2, 6).map((item, index) => (
             <motion.div
-              className="card max-md:mx-auto card-side bg-white shadow-xl max-w-[375px] xl:w-zz hover:scale-[1.005] "
+              className="card max-md:mx-auto card-side bg-white shadow-xl max-w-[375px] lg:max-w-zz hover:scale-[.98] "
               key={index}
               variants={menuVariant}
             >
@@ -81,7 +81,7 @@ export const Recommended = ({ menuItems }) => {
                     ${item.price}
                   </h6>
                   <button
-                    className="btn btn-sm bg-golden hover:bg-greener text-white "
+                    className="px-1 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                     onClick={() => {
                       const path = `/${item.id}`
                       navigate(path)

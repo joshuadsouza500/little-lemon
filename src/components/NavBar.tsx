@@ -84,7 +84,9 @@ export const NavBar = () => {
 
         {/* mobile navbar*/}
         <NavLink to="/cart" className="md:hidden flex flex-row-reverse -mr-3 ">
-          <span className="-mt-2 text-golden text-2xl p-1">{cartQuantity}</span>
+          <span className="-mt-2 text-golden text-xl md:text-2xl p-1">
+            {cartQuantity}
+          </span>
           <img
             className="h-10 hover:scale-105 "
             src="/assets/download.svg"
@@ -109,7 +111,7 @@ export const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52 "
+            className="menu menu-lg dropdown-content mt-3 z-[1] p-4 shadow bg-white rounded-box w-52 "
           >
             <li>
               <NavLink to="/">Home</NavLink>

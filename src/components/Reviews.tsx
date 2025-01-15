@@ -18,7 +18,7 @@ const reviewsVariant = {
 
 export const Reviews = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <motion.div
         className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20 max-w-xxl 2xl:max-w-xxxl mx-auto "
         initial="hidden"
@@ -72,7 +72,7 @@ export const Reviews = () => {
       </motion.div>
       <img
         src="/assets/pepper.png"
-        className="size-72 2xl:size-96 absolute -left-32 bottom-10 opacity-15"
+        className="size-64 md:size-72 2xl:size-96 absolute -right-32 bottom-10 opacity-15"
       />
     </div>
   )
