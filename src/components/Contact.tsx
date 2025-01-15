@@ -19,7 +19,7 @@ const contactVariant = {
 export const Contact = () => {
   return (
     <div className="relative overflow-hidden">
-      <div className="flex flex-col md:flex-row  pt-20 pb-10 pr-2 justify-between max-w-xxl 2xl:max-w-xxxl mx-auto">
+      <div className="flex flex-col md:flex-row  pt-20 pb-10 lg:pb-20 pr-2 justify-between max-w-xxl 2xl:max-w-xxxl mx-auto">
         <motion.div
           className="flex flex-col gap-3 ml-8 md:ml-28 pr-2  md:pr-0 items-start"
           initial="hidden"
@@ -49,14 +49,6 @@ export const Contact = () => {
             variants={contactVariant}
           >
             <span>
-              <span className="font-bold text-lg -ml-1">Call Us:</span>
-              <br />
-              (415) 123-4567
-              <br />
-              (415) 453-6724
-              <br />
-            </span>
-            <span>
               <span className="font-bold text-lg -ml-1">Location:</span> <br />
               Moxhe 118a Macpherson Street Bronte,
               <br /> Chicago 2024
@@ -67,11 +59,11 @@ export const Contact = () => {
                 Hours of Operation:
               </span>
               <br />
-              Sunday: Closed
+              Monday - Friday: 11:00am - 10:00pm
               <br />
-              Monday: Closed
+              Saturday: 11am - 11pm
               <br />
-              Tuesday - Saturday: 9:00 am - 6:00 pm
+              Sunday: 11am - 9pm
             </span>
           </motion.div>
           <motion.button
@@ -81,15 +73,24 @@ export const Contact = () => {
             <NavLink to="/reservation">Book a table</NavLink>
           </motion.button>
         </motion.div>
-        <div className="px-2 ml-5 mr-1 md:ml-1 pt-14 md:pt-24 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20">
+        <div className="px-2 ml-5 mr-1 md:ml-1 mt-10 md:mt-16 max-md:h-72 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20 rounded-lg overflow-hidden shadow-lg">
           <motion.img
             src="/assets/map.png"
-            className="rounded-2xl"
+            className="rounded-2xl hidden"
             initial={{ filter: 'blur(4px)' }}
             whileInView={{ filter: 'blur(0px)' }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           ></motion.img>
+          <iframe
+            title="Little Lemon Location"
+            width="100%"
+            height="100%"
+            className=" rounded-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.2596831892297!2d-87.6244212!3d41.8867074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca3e2d9b6ef%3A0x4a79c2133bce7648!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+            allowFullScreen
+            loading="lazy"
+          />
         </div>
       </div>
       <img

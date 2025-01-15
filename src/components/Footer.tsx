@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Mail, Phone, Globe, Copyright } from 'lucide-react'
 //bg-[url('/assets/footer.jpg')]
-export const Footer = () => {
+{
+  /**export const Footer = () => {
   return (
     <footer className=" bg-Dgreen bottom-0 bg-no-repeat bg-center py-6">
       <div className=" font-josefin pt-4 pb-1 flex justify-between px-6 md:px-40 items-center">
@@ -64,6 +66,102 @@ export const Footer = () => {
       <div className="p-2 md:px-8 text-white text-opacity-80 flex items-center justify-between">
         <img src="/assets/little_lemon_logo.png" width={120}></img>
         <h6> © 2024 Little Lemon</h6>
+      </div>
+    </footer>
+  )
+} */
+}
+
+export function Footer() {
+  return (
+    <footer className="bg-Dgreen text-white overflow-hidden">
+      <div className=" mx-auto px-4 py-10 max-w-xxl 2xl:max-w-xxxl">
+        <div className="grid grid-cols-2  lg:grid-cols-3 gap-1 md:gap-8  lg:pl-10">
+          {/* About Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Navigation</h3>
+            <nav className="space-y-2">
+              <NavLink
+                to="/"
+                className="block text-gray-200 hover:text-golden transition-colors"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/about"
+                className="block text-gray-200 hover:text-golden transition-colors"
+              >
+                About
+              </NavLink>
+              <NavLink
+                to="/menu"
+                className="block text-gray-200 hover:text-golden transition-colors"
+              >
+                Menu
+              </NavLink>
+
+              <NavLink
+                to="/reservation"
+                className="block text-gray-200 hover:text-golden transition-colors"
+              >
+                Reservation
+              </NavLink>
+            </nav>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
+                <Phone className="w-5 h-5 text-golden" />
+                <span>(555) 123-4567</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-5 h-5 text-golden" />
+                <span>info@littlelemon</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Globe className="w-5 h-5 text-golden" />
+                <span>123 Blvd Street</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Opening Hours */}
+          <div className="hidden md:block">
+            <h3 className=" text-xl font-semibold mb-4">Opening Hours</h3>
+            <div className="space-y-2">
+              <p>Monday - Friday: 11am - 10pm</p>
+              <p>Saturday: 11am - 11pm</p>
+              <p>Sunday: 11am - 9pm</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-500 mt-8 pt-5 flex flex-col md:flex-row justify-between items-center ">
+          <div className="flex items-center gap-2 text-sm text-gray-300">
+            <Copyright className="w-4 h-4" />
+            <span>2024 Little Lemon. All rights reserved.</span>
+          </div>
+          <div className="mt-4 md:mt-0">
+            <nav className="flex gap-8">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                Terms of Service
+              </a>
+            </nav>
+          </div>
+        </div>
       </div>
     </footer>
   )
