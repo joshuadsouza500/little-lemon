@@ -75,8 +75,8 @@ import { Mail, Phone, Globe, Copyright } from 'lucide-react'
 export function Footer() {
   return (
     <footer className="bg-Dgreen text-white overflow-hidden">
-      <div className=" mx-auto px-4 py-5 md:py-10 max-w-xxl 2xl:max-w-xxxl">
-        <div className="grid grid-cols-2  lg:grid-cols-3 gap-1 md:gap-8  lg:pl-10">
+      <div className=" mx-auto px-4 pt-6 pb-4 md:pt-12 md:pb-6 ">
+        <div className="grid grid-cols-2  lg:grid-cols-3 gap-1 place-items-baseline pl-2 items-start md:gap-8  lg:pl-10 max-w-xxl 2xl:max-w-xxxl mx-auto">
           {/* About Section */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Navigation</h3>
@@ -140,13 +140,13 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-500 mt-8 pt-5 flex flex-col md:flex-row justify-between items-center ">
+        <div className="border-t border-gray-500 mt-8 pt-5 flex flex-col md:flex-row justify-between items-center lg:mx-4 2xl:mx-10 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-gray-300">
             <Copyright className="w-4 h-4" />
             <span>2024 Little Lemon. All rights reserved.</span>
           </div>
-          <div className="mt-4 md:mt-0">
-            <nav className="flex gap-8 w-full justify-between">
+          <div className="max-md:mt-2 max-md:w-full">
+            <nav className="flex gap-8 text-xs justify-between ">
               <a
                 href="#"
                 className="text-gray-300 hover:text-white transition-colors"

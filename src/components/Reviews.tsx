@@ -68,10 +68,10 @@ export const Reviews = () => {
         >
           Reviews
         </motion.h1>
-        <motion.div className="" variants={reviewsVariant}>
+        <motion.div className="space-y-4 mx-2 " variants={reviewsVariant}>
           {reviews.map((review) => (
-            <div key={review.id} className="md:basis-1/2 lg:basis-1/3">
-              <div className="bg-white p-6 rounded-xl shadow-md h-full">
+            <div key={review.id} className="md:basis-1/2 lg:basis-1/3 ">
+              <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
                 <div className="flex items-center mb-4">
                   <img
                     src={review.image}
@@ -79,7 +79,7 @@ export const Reviews = () => {
                     className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <h3 className="font-semibold text-gray-800">
+                    <h3 className="font-semibold text-gray-100">
                       {review.name}
                     </h3>
                     <div className="flex">
@@ -92,7 +92,7 @@ export const Reviews = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-gray-600">{review.text}</p>
+                <p className="text-gray-300">{review.text}</p>
                 <MessageSquare className="w-6 h-6 text-purple-400 mt-4" />
               </div>
             </div>

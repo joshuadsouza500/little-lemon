@@ -2,6 +2,7 @@ import React from 'react'
 import { useCartContext } from '../context/CartContext'
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { MinusIcon, PlusIcon } from 'lucide-react'
 export const Cart = () => {
   const {
     removeItem,
@@ -50,21 +51,19 @@ export const Cart = () => {
                 </h2>
 
                 <button
-                  className="btn btn-square bg-golden hover:bg-red-700 text-white btn-sm md:btn-md"
+                  className="btn btn-square hover:bg-golden bg-red-700 text-white btn-sm "
                   onClick={() => decreaseCart(cart.id)}
-                  style={{ fontSize: '1.5rem' }}
                 >
-                  -
+                  <MinusIcon />
                 </button>
                 <span className="px-5 py-2 md:py-4 rounded-md text-lg md:text-xl ">
                   {cart.quantity}
                 </span>
                 <button
-                  className="btn btn-square bg-golden hover:bg-greener  text-white btn-sm md:btn-md"
+                  className="btn btn-square hover:bg-golden bg-greener  text-white btn-sm "
                   onClick={() => increaseCart(cart.id)}
-                  style={{ fontSize: '1.5rem' }}
                 >
-                  +
+                  <PlusIcon />
                 </button>
 
                 <div className=" mt-3 md:mt-4 pb-2">

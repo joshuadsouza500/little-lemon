@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useCartContext } from '../context/CartContext'
 import { motion } from 'framer-motion'
+import { ShoppingBasket } from 'lucide-react'
 
 export const NavBar = () => {
   const { cartQuantity } = useCartContext()
@@ -71,12 +72,12 @@ export const NavBar = () => {
               </NavLink>
             </li>
             <li className="flex flex-row-reverse ">
-              <span className="-mt-5 ">{cartQuantity}</span>
+              <span className="-mt-3 ">{cartQuantity}</span>
               <NavLink
                 to="/cart"
                 className=" aria-[current=page]:border-b-green-700  aria-[current=page]:border-b-2"
               >
-                <img className="-mt-3 " src="/assets/download.svg"></img>
+                <ShoppingBasket className="-mt-1 -ml-1 size-9 hover:text-greener text-golden" />
               </NavLink>
             </li>
           </ul>
@@ -84,13 +85,10 @@ export const NavBar = () => {
 
         {/* mobile navbar*/}
         <NavLink to="/cart" className="md:hidden flex flex-row-reverse -mr-3 ">
-          <span className="-mt-2 text-golden text-xl md:text-2xl p-1">
+          <span className="-mt-2 text-golden text-lg md:text-2xl p-1">
             {cartQuantity}
           </span>
-          <img
-            className="h-10 hover:scale-105 "
-            src="/assets/download.svg"
-          ></img>
+          <ShoppingBasket className="size-7 text-golden" />
         </NavLink>
         <div className="md:hidden dropdown dropdown-end sm:mr-4 p-1 flex gap-1">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle ">

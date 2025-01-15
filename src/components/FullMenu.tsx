@@ -128,12 +128,12 @@ export const FullMenu = ({ menuItems }) => {
                   <p className="pl-2 text-sm pb-3  text-blackish/90 leading-none md:leading-tight w-[93%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-3 mb-2 items-center">
+                  <div className="grid  grid-cols-2 sm:place-items-start mr-3 mb-2 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
                     <button
-                      className="px-0.5 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
+                      className="px-0.5 max-md:max-w-24 pt-1  md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -192,12 +192,12 @@ export const FullMenu = ({ menuItems }) => {
                   <p className=" pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-3 mb-2 pt-1 items-center">
+                  <div className="grid  grid-cols-2 sm:place-items-start mr-3 mb-2 pt-1 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
                     <button
-                      className="px-0.5 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
+                      className="px-0.5 max-md:max-w-24 pt-1  md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -256,12 +256,12 @@ export const FullMenu = ({ menuItems }) => {
                   <p className="pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-3 mb-2 pt-1 items-center">
+                  <div className="grid  grid-cols-2 sm:place-items-start mr-3 mb-2 pt-1 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
                     <button
-                      className="px-0.5 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
+                      className="px-0.5 max-md:max-w-24 pt-1  md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -320,12 +320,12 @@ export const FullMenu = ({ menuItems }) => {
                   <p className="pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2  items-center">
+                  <div className="grid  grid-cols-2 sm:place-items-start mr-6 mb-2  items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
                     <button
-                      className="px-0.5 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
+                      className="px-0.5 max-md:max-w-24 pt-1  md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)

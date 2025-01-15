@@ -54,11 +54,11 @@ export const OurTeam = () => {
     },
     {
       id: 4,
-      name: 'Sydney Jones',
+      name: 'Alex Jones',
       position: 'Server',
-      image: '/assets/waiter.png',
+      image: '/assets/Chef9.png',
       description:
-        'Sydney excels in customer service and has a knack for making customers feel welcome and valued.',
+        'Alex excels in customer service and has a knack for making customers feel welcome and valued.',
     },
   ]
   const [selectedWorker, setSelectedWorker] = useState<number | null>(null)
