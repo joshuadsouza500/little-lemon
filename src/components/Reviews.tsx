@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { MessageSquare, Star } from 'lucide-react'
 import React from 'react'
 
 const reviewsVariant = {
@@ -15,6 +16,30 @@ const reviewsVariant = {
     },
   },
 }
+
+const reviews = [
+  {
+    id: 1,
+    name: 'Sarah Johnson',
+    rating: 5,
+    text: "The best Mediterranean cuisine I've ever had! The lemon chicken was perfectly seasoned.",
+    image: '/placeholder.svg',
+  },
+  {
+    id: 2,
+    name: 'Michael Chen',
+    rating: 5,
+    text: 'Amazing atmosphere and even better food. The service was impeccable!',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 3,
+    name: 'Emma Davis',
+    rating: 4,
+    text: 'A hidden gem! The homemade desserts are to die for. Will definitely be back!',
+    image: '/placeholder.svg',
+  },
+]
 
 export const Reviews = () => {
   return (
@@ -43,31 +68,35 @@ export const Reviews = () => {
         >
           Reviews
         </motion.h1>
-        <motion.div className="stack" variants={reviewsVariant}>
-          <div className="rounded-2xl bg-Dgreen w-[90%] sm:w-[75%] py-6 md:py-10 px-8 font-josefin text-white text-center sm:text-xl text-opacity-90 2xl:w-[60%]">
-            <span className="text-golden">
-              &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
-            </span>
-            <p className="py-4">
-              "The Little Lemon Restaurant is a hidden gem that deserves all the
-              praise it gets. I will definitely be returning and I highly
-              recommend this restaurant to anyone looking for a fantastic dining
-              experience."
-            </p>
-            <h3>Kylie meyer. </h3>
-          </div>
-          <div className="rounded-2xl bg-greener w-[90%] sm:w-[75%] py-6 md:py-10 px-8 font-josefin text-white text-center sm:text-xl text-opacity-90 2xl:w-[60%]">
-            <span className="text-golden">
-              &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
-            </span>
-            <p className="py-4">
-              "The Little Lemon Restaurant is a hidden gem that deserves all the
-              praise it gets. I will definitely be returning and I highly
-              recommend this restaurant to anyone looking for a fantastic dining
-              experience."
-            </p>
-            <h3>John Lewis. </h3>
-          </div>
+        <motion.div className="" variants={reviewsVariant}>
+          {reviews.map((review) => (
+            <div key={review.id} className="md:basis-1/2 lg:basis-1/3">
+              <div className="bg-white p-6 rounded-xl shadow-md h-full">
+                <div className="flex items-center mb-4">
+                  <img
+                    src={review.image}
+                    alt={review.name}
+                    className="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <h3 className="font-semibold text-gray-800">
+                      {review.name}
+                    </h3>
+                    <div className="flex">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600">{review.text}</p>
+                <MessageSquare className="w-6 h-6 text-purple-400 mt-4" />
+              </div>
+            </div>
+          ))}
         </motion.div>
       </motion.div>
       <img

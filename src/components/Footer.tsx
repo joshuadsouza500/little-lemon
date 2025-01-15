@@ -75,7 +75,7 @@ import { Mail, Phone, Globe, Copyright } from 'lucide-react'
 export function Footer() {
   return (
     <footer className="bg-Dgreen text-white overflow-hidden">
-      <div className=" mx-auto px-4 py-10 max-w-xxl 2xl:max-w-xxxl">
+      <div className=" mx-auto px-4 py-5 md:py-10 max-w-xxl 2xl:max-w-xxxl">
         <div className="grid grid-cols-2  lg:grid-cols-3 gap-1 md:gap-8  lg:pl-10">
           {/* About Section */}
           <div>
@@ -146,7 +146,7 @@ export function Footer() {
             <span>2024 Little Lemon. All rights reserved.</span>
           </div>
           <div className="mt-4 md:mt-0">
-            <nav className="flex gap-8">
+            <nav className="flex gap-8 w-full justify-between">
               <a
                 href="#"
                 className="text-gray-300 hover:text-white transition-colors"

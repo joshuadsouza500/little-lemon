@@ -32,7 +32,7 @@ export const OurTeam = () => {
       id: 1,
       name: 'Steven Lucre',
       position: 'Head Chef',
-      image: '/assets/chef2.png',
+      image: '/assets/Chef7.png',
       description:
         'Steven has over 15 years of experience in fine dining and has worked in several Michelin-starred restaurants.',
     },
@@ -40,7 +40,7 @@ export const OurTeam = () => {
       id: 2,
       name: 'Melissa Sue',
       position: 'Sous Chef',
-      image: '/assets/chef1.png',
+      image: '/assets/Chef8.png',
       description:
         'Melissa specializes in pastry and has a passion for creating desserts that are as beautiful as they are delicious.',
     },
@@ -48,7 +48,7 @@ export const OurTeam = () => {
       id: 3,
       name: 'Mark Wright',
       position: 'Sous Chef',
-      image: '/assets/chef3.png',
+      image: '/assets/chef2.png',
       description:
         'Mark brings a fusion of flavors from his travels around the world and has a wealth of culinary knowledge.',
     },
@@ -106,11 +106,11 @@ export const OurTeam = () => {
           </motion.button>
         </motion.div>
         <div className="pt-14 md:pt-1 pr-1 flex justify-center md:flex-none md:w-2/4 ">
-          <div className="carousel carousel-center max-w-md lg:max-w-lg 2xl:max-w-xl p-4 space-x-4 rounded-box items-center ">
+          <div className="carousel carousel-center max-w-md lg:max-w-lg 2xl:max-w-xl p-4 space-x-4  items-center ">
             {workers.map((worker) => (
               <div
                 key={worker.name}
-                className="carousel-item w-1/2 cursor-pointer relative overflow-hidden group"
+                className="carousel-item w-1/2 cursor-pointer relative overflow-hidden group rounded-xl"
                 onClick={() => ToggleWorker(worker.id)}
               >
                 <div
@@ -122,8 +122,8 @@ export const OurTeam = () => {
                 >
                   {selectedWorker === worker.id && (
                     <span className="flex flex-col  items-center gap-y-2">
-                      <Info />
-                      <p className="text-white text-balance font-medium text-center animate-fade-in">
+                      <Info className="bg-gray-200" />
+                      <p className="text-white max-md:text-sm text-balance font-medium text-center animate-fade-in">
                         {worker.description}
                       </p>
                     </span>
