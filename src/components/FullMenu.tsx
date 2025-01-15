@@ -30,7 +30,7 @@ export const FullMenu = ({ menuItems }) => {
   const navigate = useNavigate()
 
   return (
-    <main className="bg-gradient-to-br from-base-100 to-teal-50">
+    <main className="bg-white ">
       <div className="pt-20 md:pt-28 ">
         <motion.h1
           className="font-alex text-golden text-6xl lg:text-7xl text-center pb-6 pr-4"
@@ -92,6 +92,10 @@ export const FullMenu = ({ menuItems }) => {
                 className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005]"
                 variants={menuVariant}
                 key={item.id}
+                onClick={() => {
+                  const path = `/${item.id}`
+                  navigate(path)
+                }}
               >
                 <div className="bg-greener rounded-lg self-center py-4">
                   <figure className="">
@@ -108,7 +112,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="btn btn-sm  hover:scale-105 bg-golden hover:bg-greener  text-white  "
+                      className="px-2 py-1.5 rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)

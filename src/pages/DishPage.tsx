@@ -10,9 +10,10 @@ export const DishPage = () => {
   return (
     <motion.main
       initial={{ y: 10 }}
-      animate={{ y : 0}}
-      exit={{ y: -10,opacity:0 }}
-      transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      animate={{ y: 0 }}
+      exit={{ y: -10, opacity: 0 }}
+      transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+      className="bg-white"
     >
       <Dish menuItems={menuData} />
       <Recommended menuItems={menuData} />
