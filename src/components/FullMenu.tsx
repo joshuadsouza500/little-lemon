@@ -31,7 +31,7 @@ export const FullMenu = ({ menuItems }) => {
 
   return (
     <main className="bg-white ">
-      <div className="pt-16 md:pt-28 ">
+      <div className="pt-20 md:pt-28 ">
         <motion.h1
           className="font-alex text-golden text-6xl lg:text-7xl text-center pb-6 pr-4"
           initial={{ y: 10, opacity: 0 }}
@@ -76,7 +76,7 @@ export const FullMenu = ({ menuItems }) => {
 
         <div className=" text-blackish font-josefin  ">
           <motion.div
-            className="grid  md:grid-cols-2 gap-x-5 md:gap-8 mx-2 md:ml-14 lg:ml-20 "
+            className="grid  md:grid-cols-2 gap-5 md:gap-8 mx-2 md:ml-14 lg:ml-20 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -89,7 +89,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 3).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005]"
+                className="max-md:mx-auto  card card-side bg-white shadow-xl max-w-[375px] lg:w-zz hover:scale-[1.005] "
                 variants={menuVariant}
                 key={item.id}
                 onClick={() => {
@@ -107,12 +107,12 @@ export const FullMenu = ({ menuItems }) => {
                   <p className="pl-2 text-sm pb-3 font-normal leading-none md:leading-tight w-[93%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 items-center">
+                  <div className="grid grid-cols-2 sm:place-items-start mr-3 mb-2 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2 py-1.5 rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
+                      className="px-2 py-1.5 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -140,7 +140,7 @@ export const FullMenu = ({ menuItems }) => {
         </div>
         <div className=" text-blackish font-josefin">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
+            className="grid  md:grid-cols-2 gap-5 md:gap-8 mx-2 md:ml-14 lg:ml-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -153,7 +153,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(6, 9).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
                 onClick={() => {
@@ -171,12 +171,12 @@ export const FullMenu = ({ menuItems }) => {
                   <p className=" pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 pt-1 items-center">
+                  <div className="grid grid-cols-2 sm:place-items-start mr-3 mb-2 pt-1 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2.5 py-1.5 hover:scale-[.98] bg-golden hover:bg-greener text-white "
+                      className="px-2.5 py-1.5 hover:scale-[.98] rounded-md bg-golden hover:bg-greener text-white "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -204,7 +204,7 @@ export const FullMenu = ({ menuItems }) => {
         </div>
         <div className=" text-blackish font-josefin">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
+            className="grid  md:grid-cols-2 gap-5 md:gap-8 mx-2 md:ml-14 lg:ml-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -217,7 +217,7 @@ export const FullMenu = ({ menuItems }) => {
           >
             {menuItems.slice(0, 6).map((item: props) => (
               <motion.div
-                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 variants={menuVariant}
                 onClick={() => {
@@ -235,12 +235,12 @@ export const FullMenu = ({ menuItems }) => {
                   <p className="pl-2 text-sm pb-2 font-normal leading-none w-[93%]">
                     {item.para}
                   </p>
-                  <div className="grid grid-cols-2 sm:place-items-start mr-6 mb-2 pt-1 items-center">
+                  <div className="grid grid-cols-2 sm:place-items-start mr-3 mb-2 pt-1 items-center">
                     <h6 className="text-golden text-base md:text-lg font-bold pl-2 ">
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2.5 py-1.5 hover:scale-[.98] bg-golden hover:bg-greener text-white "
+                      className="px-2.5 py-1.5 hover:scale-[.98] rounded-md bg-golden hover:bg-greener text-white "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)
@@ -268,7 +268,7 @@ export const FullMenu = ({ menuItems }) => {
         </div>
         <div className=" text-blackish font-josefin">
           <motion.div
-            className="grid  md:grid-cols-2 gap-4 md:gap-8 mx-2 md:ml-14 lg:ml-20"
+            className="grid  md:grid-cols-2 gap-5 md:gap-8 mx-2 md:ml-14 lg:ml-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -282,7 +282,7 @@ export const FullMenu = ({ menuItems }) => {
             {menuItems.slice(9, 12).map((item: props) => (
               <motion.div
                 variants={menuVariant}
-                className="card card-side bg-base-100 shadow-xl w-[375px] lg:w-zz hover:scale-[1.005] "
+                className="card card-side bg-white shadow-xl max-w-[375px] max-md:mx-auto lg:w-zz hover:scale-[1.005] "
                 key={item.id}
                 onClick={() => {
                   const path = `/${item.id}`
@@ -304,7 +304,7 @@ export const FullMenu = ({ menuItems }) => {
                       ${item.price}
                     </h6>
                     <button
-                      className="px-2.5 py-1.5 hover:scale-[.98] bg-golden hover:bg-greener text-white "
+                      className="px-2.5 py-1.5 rounded-md hover:scale-[.98] bg-golden hover:bg-greener text-white "
                       onClick={() => {
                         const path = `/${item.id}`
                         navigate(path)

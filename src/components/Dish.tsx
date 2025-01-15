@@ -2,7 +2,12 @@ import React, { useEffect } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useCartContext } from '../context/CartContext'
 import { motion } from 'framer-motion'
-import { ChevronLeft, ChevronLeftIcon, ChevronRight } from 'lucide-react'
+import {
+  ChevronLeft,
+  ChevronLeftCircle,
+  ChevronLeftIcon,
+  ChevronRight,
+} from 'lucide-react'
 
 export const Dish = ({ menuItems }) => {
   //TO get the itemid from url param and check if it is in cart//
@@ -31,31 +36,33 @@ export const Dish = ({ menuItems }) => {
         )}
 
         <div className=" grid md:grid-cols-2 md:mt-10 mt-2 rounded-lg ">
-          <div className=" w-full flex justify-center items-center  ">
-            <button
-              onClick={() => {
-                if (id) {
-                  const path = `/${parseInt(id) - 1}`
-                  navigate(path)
-                }
-              }}
-              className="p-1 text-2xl btn-circle bg-greener m-1 md:m-2"
-            >
-              <ChevronLeft className="size-6" />
+          <div className=" w-full gap-x-1 md:gap-x-2 flex justify-center items-center  ">
+            <button className="bg-greener rounded-full ">
+              <ChevronLeft
+                className="size-10 pr-0.5   text-white  "
+                onClick={() => {
+                  if (id) {
+                    const path = `/${parseInt(id) - 1}`
+                    navigate(path)
+                  }
+                }}
+              />
             </button>
-            <div className="md:bg-greener py-2 rounded-lg flex items-center px-5">
+
+            <div className="bg-greener py-2 rounded-lg flex items-center px-5">
               <img src={menuItem.img} alt="food item image" className="p-1" />
             </div>
-            <button
-              onClick={() => {
-                if (id) {
-                  const path = `/${parseInt(id) + 1}`
-                  navigate(path)
-                }
-              }}
-              className="  btn-circle bg-greener m-1 md:m-2"
-            >
-              <ChevronRight className="size-6" />
+
+            <button className="bg-greener  rounded-full ">
+              <ChevronRight
+                className="size-10 pl-0.5   text-white  "
+                onClick={() => {
+                  if (id) {
+                    const path = `/${parseInt(id) + 1}`
+                    navigate(path)
+                  }
+                }}
+              />
             </button>
           </div>
 
