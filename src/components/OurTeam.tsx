@@ -32,7 +32,7 @@ export const OurTeam = () => {
       id: 1,
       name: 'Steven Lucre',
       position: 'Head Chef',
-      image: '/assets/Chef7.png',
+      image: '/assets/chef2.png',
       description:
         'Steven has over 15 years of experience in fine dining and has worked in several Michelin-starred restaurants.',
     },
@@ -48,17 +48,17 @@ export const OurTeam = () => {
       id: 3,
       name: 'Mark Wright',
       position: 'Sous Chef',
-      image: '/assets/chef2.png',
+      image: '/assets/Chef7.png',
       description:
         'Mark brings a fusion of flavors from his travels around the world and has a wealth of culinary knowledge.',
     },
     {
       id: 4,
       name: 'Alex Jones',
-      position: 'Server',
-      image: '/assets/Chef9.png',
+      position: 'Pastry Chef',
+      image: '/assets/Chef10.png',
       description:
-        'Alex excels in customer service and has a knack for making customers feel welcome and valued.',
+        'With over 12 years of experience in the pastry arts, Alex specializes in creating exquisite desserts that have innovative flavors',
     },
   ]
   const [selectedWorker, setSelectedWorker] = useState<number | null>(null)

@@ -23,21 +23,21 @@ const reviews = [
     name: 'Sarah Johnson',
     rating: 5,
     text: "The best Mediterranean cuisine I've ever had! The lemon chicken was perfectly seasoned.",
-    image: '/placeholder.svg',
+    image: '/assets/people/R1.svg',
   },
   {
     id: 2,
     name: 'Michael Chen',
     rating: 5,
     text: 'Amazing atmosphere and even better food. The service was impeccable!',
-    image: '/placeholder.svg',
+    image: '/assets/people/R2.svg',
   },
   {
     id: 3,
     name: 'Emma Davis',
     rating: 4,
     text: 'A hidden gem! The homemade desserts are to die for. Will definitely be back!',
-    image: '/placeholder.svg',
+    image: '/assets/people/R3.svg',
   },
 ]
 
@@ -68,7 +68,10 @@ export const Reviews = () => {
         >
           Reviews
         </motion.h1>
-        <motion.div className="space-y-4 mx-2 " variants={reviewsVariant}>
+        <motion.div
+          className="space-y-4 mx-2 xl:flex"
+          variants={reviewsVariant}
+        >
           {reviews.map((review) => (
             <div key={review.id} className="md:basis-1/2 lg:basis-1/3 ">
               <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
