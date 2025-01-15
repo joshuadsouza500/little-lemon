@@ -122,7 +122,7 @@ export const OurTeam = () => {
                 >
                   {selectedWorker === worker.id && (
                     <span className="flex flex-col  items-center gap-y-2">
-                      <Info className="bg-gray-200" />
+                      <Info className="text-gray-200" />
                       <p className="text-white max-md:text-sm text-balance font-medium text-center animate-fade-in">
                         {worker.description}
                       </p>

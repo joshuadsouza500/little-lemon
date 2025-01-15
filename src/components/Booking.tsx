@@ -7,7 +7,7 @@ const Booking = () => {
       <img
         src="/assets/Booking.png"
         alt="Chef"
-        className="size-60 md:size-72 2xl:size-96 absolute -left-16 2xl:-left-10 bottom-10 opacity-80"
+        className="size-60 md:size-72 2xl:size-[500px] absolute -left-16 2xl:-left-10 bottom-2 opacity-10"
       />
       <h1 className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-2 lg:pb-4 -ml-1">
         Join Us

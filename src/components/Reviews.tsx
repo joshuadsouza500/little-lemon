@@ -79,7 +79,7 @@ export const Reviews = () => {
                   <img
                     src={review.image}
                     alt={review.name}
-                    className="w-12 h-12 rounded-full mr-4"
+                    className="w-12 h-12 rounded-full mr-4 bg-gray-400"
                   />
                   <div>
                     <h3 className="font-semibold text-gray-100">
@@ -89,7 +89,7 @@ export const Reviews = () => {
                       {[...Array(review.rating)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                          className="size-4 px-0.5 fill-[#E4B44E] text-[#E4B44E]"
                         />
                       ))}
                     </div>
