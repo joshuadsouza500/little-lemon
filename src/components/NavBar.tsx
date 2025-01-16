@@ -42,7 +42,7 @@ export const NavBar = () => {
             <li>
               <NavLink
                 to="/"
-                className="hover:text-green-700 hover:scale-105  aria-[current=page]:text-green-700 aria-[current=page]:underline"
+                className="hover:text-green-700 aria-[current=page]:underline  aria-[current=page]:text-green-700 "
               >
                 Home
               </NavLink>
@@ -50,7 +50,7 @@ export const NavBar = () => {
             <li>
               <NavLink
                 to="/about"
-                className="aria-[current=page]:text-green-700 aria-[current=page]:underline  hover:text-green-700  hover:scale-105  "
+                className="aria-[current=page]:text-green-700 aria-[current=page]:underline  hover:text-green-700    "
               >
                 About
               </NavLink>
@@ -58,15 +58,15 @@ export const NavBar = () => {
             <li>
               <NavLink
                 to="/menu"
-                className="hover:text-green-700 hover:scale-105  aria-[current=page]:text-green-700 aria-[current=page]:underline"
+                className="hover:text-green-700   aria-[current=page]:text-green-700 aria-[current=page]:underline"
               >
                 Menu
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/reservation"
-                className="hover:text-green-700 hover:scale-105  aria-[current=page]:text-green-700 aria-[current=page]:underline pr-2"
+                to="#reservation"
+                className="hover:text-green-700   aria-[current=page]:text-green-700 aria-[current=page]:underline pr-2"
               >
                 Reservation
               </NavLink>
@@ -84,7 +84,10 @@ export const NavBar = () => {
         </div>
 
         {/* mobile navbar*/}
-        <NavLink to="/cart" className="md:hidden flex flex-row-reverse -mr-3 ">
+        <NavLink
+          to="/cart"
+          className="md:hidden flex flex-row-reverse -mr-4 sm:-mr-7 "
+        >
           <span className="-mt-2 text-golden text-lg md:text-2xl p-1">
             {cartQuantity}
           </span>
@@ -111,17 +114,17 @@ export const NavBar = () => {
             tabIndex={0}
             className="menu menu-lg dropdown-content mt-3 z-[1] p-4 shadow bg-white rounded-box w-52 "
           >
-            <li>
+            <li className="active:bg-greener ">
               <NavLink to="/">Home</NavLink>
             </li>
-            <li>
+            <li className="active:bg-greener ">
               <NavLink to="/about">About</NavLink>
             </li>
-            <li>
+            <li className="active:bg-greener ">
               <NavLink to="/menu">Menu</NavLink>
             </li>
-            <li>
-              <NavLink to="/reservation">Reservation</NavLink>
+            <li className="active:bg-greener ">
+              <NavLink to="#reservation">Reservation</NavLink>
             </li>
           </ul>
         </div>

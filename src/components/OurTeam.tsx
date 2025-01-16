@@ -110,11 +110,11 @@ export const OurTeam = () => {
             {workers.map((worker) => (
               <div
                 key={worker.name}
-                className="carousel-item w-1/2 cursor-pointer relative overflow-hidden group rounded-xl"
+                className="carousel-item w-auto cursor-pointer relative overflow-hidden group rounded-lg"
                 onClick={() => ToggleWorker(worker.id)}
               >
                 <div
-                  className={`absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-2 z-10 rounded-2xl ${
+                  className={`absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex items-center justify-center p-2 z-10 rounded-xl ${
                     selectedWorker === worker.id
                       ? 'opacity-100'
                       : 'group-hover:opacity-40'
@@ -129,15 +129,16 @@ export const OurTeam = () => {
                     </span>
                   )}
                 </div>
-                <div className="card bg-zinc-800 shadow-md">
-                  <figure>
+                <div className="card  ">
+                  <figure className="bg-zinc-800 ">
                     <img
                       src={worker.image}
                       alt={worker.name}
-                      className="aspect-square mt-2 object-fill"
+                      className="h-48 lg:h-52 w-full  mt-2 mx-1 object-cover"
                     />
                   </figure>
-                  <div className="p-3 gap-0 bg-white/95 text-blackish font-josefin text-center rounded-b-xl ">
+
+                  <div className="p-3 gap-0 bg-gray-100 text-blackish font-josefin text-center rounded-b-xl ">
                     <h2 className="md:text-lg font-semibold">{worker.name}</h2>
                     <p className="text-golden">{worker.position}</p>
                   </div>
