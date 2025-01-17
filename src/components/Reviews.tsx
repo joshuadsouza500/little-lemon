@@ -69,11 +69,19 @@ export const Reviews = () => {
           Reviews
         </motion.h1>
         <motion.div
-          className="space-y-4 mx-2 flex overflow-x-scroll"
+          className="space-y-4 mx-2 flex"
+          style={{
+            overflowX: 'scroll',
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+          }}
           variants={reviewsVariant}
         >
           {reviews.map((review) => (
-            <div key={review.id} className="md:basis-1/2 lg:basis-1/3 ">
+            <div
+              key={review.id}
+              className="basis-1/2 md:basis-1/2 lg:basis-1/3 "
+            >
               <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
                 <div className="flex items-center mb-4">
                   <img
