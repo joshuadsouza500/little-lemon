@@ -116,7 +116,7 @@ export const Reviews1 = () => {
   )
 }
 
-const Reviews = () => {
+export const Reviews = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel()
   return (
     <div className="relative w-full overflow-hidden ">
