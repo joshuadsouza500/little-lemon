@@ -124,7 +124,7 @@ export const NavBar = () => {
               <NavLink to="/menu">Menu</NavLink>
             </li>
             <li className="active:bg-greener ">
-              <NavLink to="#reservation">Reservation</NavLink>
+              <NavLink to="/reservation">Reservation</NavLink>
             </li>
           </ul>
         </div>
