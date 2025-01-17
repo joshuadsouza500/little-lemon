@@ -78,10 +78,7 @@ export const Reviews = () => {
           variants={reviewsVariant}
         >
           {reviews.map((review) => (
-            <div
-              key={review.id}
-              className="basis-1/2 md:basis-1/2 lg:basis-1/3 "
-            >
+            <div key={review.id} className="w-[90%] md:basis-1/2 lg:basis-1/3 ">
               <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
                 <div className="flex items-center mb-4">
                   <img
