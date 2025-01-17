@@ -1,3 +1,4 @@
+import useEmblaCarousel from 'embla-carousel-react'
 import { motion } from 'framer-motion'
 import { MessageSquare, Star } from 'lucide-react'
 import React from 'react'
@@ -41,7 +42,7 @@ const reviews = [
   },
 ]
 
-export const Reviews = () => {
+export const Reviews1 = () => {
   return (
     <div className="relative overflow-hidden">
       <motion.div
@@ -114,3 +115,49 @@ export const Reviews = () => {
     </div>
   )
 }
+
+const Reviews = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel()
+  return (
+    <div className="relative w-full overflow-hidden ">
+      {' '}
+      <div className="embla  " ref={emblaRef}>
+        <div className="embla__container h-[75vh]    flex w-full">
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="w-[90%] md:basis-1/2 lg:basis-1/3 flex-none h-full"
+            >
+              <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
+                <div className="flex items-center mb-4">
+                  <img
+                    src={review.image}
+                    alt={review.name}
+                    className="w-12 h-12 rounded-full mr-4 bg-gray-400"
+                  />
+                  <div>
+                    <h3 className="font-semibold text-gray-100">
+                      {review.name}
+                    </h3>
+                    <div className="flex">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="size-4 px-0.5 fill-[#E4B44E] text-[#E4B44E]"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-300">{review.text}</p>
+                <MessageSquare className="w-6 h-6 text-purple-400 mt-4" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Reviews
