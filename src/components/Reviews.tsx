@@ -69,7 +69,7 @@ export const Reviews = () => {
           Reviews
         </motion.h1>
         <motion.div
-          className="space-y-4 mx-2 xl:flex"
+          className="space-y-4 mx-2 flex overflow-x-scroll"
           variants={reviewsVariant}
         >
           {reviews.map((review) => (
