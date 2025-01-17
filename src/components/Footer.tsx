@@ -74,7 +74,7 @@ import { Mail, Phone, Globe, Copyright } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="relative text-white overflow-hidden bg-[url('/assets/Meal.jpeg)] bg-center bg-no-repeat">
+    <footer className="relative text-white overflow-hidden bg-[url('/assets/Meal.jpeg)] h-full w-full bg-center bg-no-repeat">
       <div className="bg-black/40 inset-0 w-full h-full" />
       <div className=" mx-auto px-4 pt-6 pb-4 md:pt-12 md:pb-6 ">
         <div className="grid grid-cols-2  lg:grid-cols-3 gap-1 place-items-baseline pl-2 items-start md:gap-8  lg:pl-10 max-w-xxl 2xl:max-w-xxxl mx-auto">
