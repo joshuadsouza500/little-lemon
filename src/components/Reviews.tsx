@@ -40,6 +40,13 @@ const reviews = [
     text: 'A hidden gem! The homemade desserts are to die for. Will definitely be back!',
     image: '/assets/people/R3.svg',
   },
+  {
+    id: 4,
+    name: 'John nik',
+    rating: 4,
+    text: 'A hidden gem! The homemade desserts are to die for. Will definitely be back!',
+    image: '/assets/people/R3.svg',
+  },
 ]
 
 export const Reviews1 = () => {
@@ -70,16 +77,11 @@ export const Reviews1 = () => {
           Reviews
         </motion.h1>
         <motion.div
-          className="space-y-4 mx-2 flex"
-          style={{
-            overflowX: 'scroll',
-            scrollbarWidth: 'none',
-            msOverflowStyle: 'none',
-          }}
+          className="space-y-4 mx-2 flex  gap-x-6 md:gap-x-4"
           variants={reviewsVariant}
         >
           {reviews.map((review) => (
-            <div key={review.id} className="w-[90%] md:basis-1/2 lg:basis-1/3 ">
+            <div key={review.id} className="w-[75%] md:basis-1/2 lg:basis-1/3 ">
               <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
                 <div className="flex items-center mb-4">
                   <img
@@ -117,16 +119,49 @@ export const Reviews1 = () => {
 }
 
 export const Reviews = () => {
+  return (
+    <div className="relative overflow-hidden">
+      <motion.div
+        className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20 max-w-xxl 2xl:max-w-xxxl mx-auto "
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: { staggerChildren: 0.2, delay: 0.2 },
+          },
+        }}
+      >
+        <motion.h1
+          className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-2 lg:pb-4 -ml-1"
+          variants={reviewsVariant}
+        >
+          Customer
+        </motion.h1>
+        <motion.h1
+          className="pr-4 font-josefin text-4xl  md:text-5xl lg:text-6xl font-bold text-blackish md:w-[70%] text-center pb-6"
+          variants={reviewsVariant}
+        >
+          Reviews
+        </motion.h1>
+        <Car />
+      </motion.div>
+    </div>
+  )
+}
+
+const Car = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel()
   return (
-    <div className="relative w-full overflow-hidden ">
+    <div className="relative w-full overflow-hidden py-2">
       {' '}
       <div className="embla  " ref={emblaRef}>
-        <div className="embla__container h-[75vh]    flex w-full">
+        <div className="embla__container h-[45vh] pl-2 lg:pl-10   flex w-full gap-x-3 md:gap-x-5 ">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="w-[90%] md:basis-1/2 lg:basis-1/3 flex-none h-full"
+              className="w-[75%] md:basis-1/2 lg:basis-1/3 mx-1  flex-none"
             >
               <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
                 <div className="flex items-center mb-4">
