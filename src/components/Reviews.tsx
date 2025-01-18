@@ -22,30 +22,34 @@ const reviews = [
   {
     id: 1,
     name: 'Sarah Johnson',
+    position: 'Food Blogger',
     rating: 5,
-    text: "The best Mediterranean cuisine I've ever had! The lemon chicken was perfectly seasoned.",
+    text: "The best Mediterranean cuisine I've ever had! Highly recommend trying their signature lemon-infused drinks as well.",
     image: '/assets/people/R1.svg',
   },
   {
     id: 2,
     name: 'Michael Chen',
+    position: 'Travel Enthusiast',
     rating: 5,
-    text: 'Amazing atmosphere and even better food. The service was impeccable!',
+    text: 'A hidden gem! The homemade desserts are to die for. Will definitely be back! Don’t miss out on their freshly baked pita bread.',
     image: '/assets/people/R2.svg',
   },
   {
     id: 3,
-    name: 'Emma Davis',
+    name: 'George Davis',
+    position: 'Food Critic',
     rating: 4,
-    text: 'A hidden gem! The homemade desserts are to die for. Will definitely be back!',
+    text: 'Amazing atmosphere and even better food. The service was impeccable! The grilled lamb was tender and full of flavor.',
     image: '/assets/people/R3.svg',
   },
   {
     id: 4,
-    name: 'John nik',
-    rating: 4,
-    text: 'A hidden gem! The homemade desserts are to die for. Will definitely be back!',
-    image: '/assets/people/R3.svg',
+    name: 'Hailey Del',
+    position: 'Chef',
+    rating: 5,
+    text: 'The best risotto I have ever had. The service was also really good, will definitely be back with more friends!.',
+    image: '/assets/people/R4.svg',
   },
 ]
 
@@ -157,35 +161,31 @@ const Car = () => {
     <div className="relative w-full overflow-hidden py-2">
       {' '}
       <div className="embla  " ref={emblaRef}>
-        <div className="embla__container h-[45vh] pl-2 lg:pl-10   flex w-full gap-x-3 md:gap-x-5 ">
+        <div className="embla__container min-h-[30vh] h-auto pl-2 lg:pl-10   flex w-full gap-x-3 md:gap-x-5 ">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="w-[75%] md:basis-1/2 lg:basis-1/3 mx-1  flex-none"
+              className="relative w-[75%] md:basis-1/2 lg:basis-1/3 mx-1  flex-none  bg-greener p-6 rounded-xl shadow-md"
             >
-              <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
-                <div className="flex items-center mb-4">
-                  <img
-                    src={review.image}
-                    alt={review.name}
-                    className="w-12 h-12 rounded-full mr-4 bg-gray-400"
-                  />
-                  <div>
-                    <h3 className="font-semibold text-gray-100">
-                      {review.name}
-                    </h3>
-                    <div className="flex">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className="size-4 px-0.5 fill-[#E4B44E] text-[#E4B44E]"
-                        />
-                      ))}
-                    </div>
-                  </div>
+              <div className="flex items-center mb-4">
+                <img
+                  src={review.image}
+                  alt={review.name}
+                  className="w-12 h-12 rounded-full mr-4 bg-gray-400"
+                />
+                <div>
+                  <h3 className="font-semibold text-gray-100">{review.name}</h3>
+                  <p className="text-sm">{review.position}</p>
                 </div>
-                <p className="text-gray-300">{review.text}</p>
-                <MessageSquare className="w-6 h-6 text-purple-400 mt-4" />
+              </div>
+              <p className="text-gray-300 lg:pr-2">{review.text}</p>
+              <div className="flex    gap-x-0.5 md:gap-x-1 pt-4">
+                {[...Array(review.rating)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="size-4 xl:size-5  fill-golden text-[#E4B44E]"
+                  />
+                ))}
               </div>
             </div>
           ))}

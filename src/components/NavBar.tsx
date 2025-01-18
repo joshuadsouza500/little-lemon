@@ -65,7 +65,7 @@ export const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="#reservation"
+                to="/reservation"
                 className="hover:text-green-700   aria-[current=page]:text-green-700 aria-[current=page]:underline pr-2"
               >
                 Reservation

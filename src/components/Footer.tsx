@@ -76,7 +76,7 @@ export function Footer() {
   return (
     <footer className="relative text-white overflow-hidden bg-[url('/assets/footer.jpg')] h-full w-full bg-cover bg-center bg-no-repeat">
       <div className=" mx-auto px-4 pt-6 pb-4 md:pt-12 md:pb-6 z-20">
-        <div className="grid grid-cols-2  lg:grid-cols-3 gap-1 place-items-baseline pl-2 items-start md:gap-8  lg:pl-10 max-w-xxl 2xl:max-w-xxxl mx-auto">
+        <div className="grid grid-cols-2  lg:grid-cols-3 gap-1 place-items-baseline pl-4 items-start md:gap-8  lg:pl-10 max-w-xxl 2xl:max-w-xxxl mx-auto">
           {/* About Section */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Navigation</h3>

@@ -34,7 +34,7 @@ export function Carousel() {
                 src={image.src}
                 className="h-full object-cover w-full "
               />
-              <div className="absolute inset-0 bg-black/25" />
+              <div className="absolute inset-0 bg-black/30" />
               <div className="absolute inset-0 flex items-center justify-center flex-col gap-y-6">
                 <h1 className="text-4xl font-serif  md:w-[60%] xl:w-[45%] 2xl:w-[40%] md:text-6xl 2xl:text-7xl  font-medium text-white text-center px-4">
                   {image.title}

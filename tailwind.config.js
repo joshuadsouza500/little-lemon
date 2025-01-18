@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        golden: '#C5A572', // light golden E4B44E
+        golden: '#E4B44E', //C5A572 light golden E4B44E D4A85D
         blackish: '#333333',
         greener: '#284F2A',
         Dgreen: '#1B3A20',
