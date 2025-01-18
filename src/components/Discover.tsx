@@ -21,7 +21,7 @@ export const Discover = () => {
   return (
     <div className="flex flex-col lg:flex-row-reverse pt-16 2xl:pt-24 pb-10 lg:pb-16 pr-2 max-w-6xl xl:max-w-xxl 2xl:max-w-xxxl mx-auto   lg:px-4">
       <motion.div
-        className="flex flex-col gap-1  lg:gap-3 ml-4 mr-2 lg:ml-8 xl:ml-12 lg:pr-0 items-center lg:items-baseline lg:w-1/2 "
+        className="flex flex-col gap-1  lg:gap-3 ml-2 mr-2 lg:ml-8 xl:ml-12 lg:pr-0 items-center lg:items-baseline lg:w-1/2 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -45,7 +45,7 @@ export const Discover = () => {
           Our Menu
         </motion.h1>
         <motion.p
-          className="font-josefin text-justify text-blackish text-lg  md:w-[80%] pb-4"
+          className="font-josefin text-justify text-blackish text-lg  md:w-[80%] pb-4 max-md:ml-2"
           variants={discoverVariant}
         >
           Savor the flavors of the Mediterranean with our thoughtfully crafted

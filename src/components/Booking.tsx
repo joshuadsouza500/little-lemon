@@ -22,31 +22,35 @@ const Booking = () => {
         <div className="flex gap-x-3 w-full items-center">
           {' '}
           <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40 text-golden/50 "
+            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/50 text-golden/50 "
             type="date"
             placeholder="Date"
+            onFocus={(e) => (e.target.type = 'date')}
+            onBlur={(e) => (e.target.type = 'text')}
           />
           <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40 text-golden/50 "
+            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/50 text-golden/50 "
             type="time"
             placeholder="Time"
+            onFocus={(e) => (e.target.type = 'time')}
+            onBlur={(e) => (e.target.type = 'text')}
           />
         </div>
         <div className="flex gap-x-3 w-full">
           {' '}
           <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40  "
+            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/50  "
             type="number"
             placeholder="Number of Guests"
           />
           <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40 "
+            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/50 "
             type="email"
             placeholder="Email"
           />
         </div>
         <input
-          className="border-golden/60 mb-1 xl:mb-2 border-[0.5px] py-8 px-4 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/40  "
+          className="border-golden/60 mb-1 xl:mb-2 border-[0.5px] py-8 px-4 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/50  "
           type="text"
           placeholder="Message"
         />

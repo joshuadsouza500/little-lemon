@@ -48,7 +48,7 @@ const reviews = [
     name: 'Hailey Del',
     position: 'Chef',
     rating: 5,
-    text: 'The best risotto I have ever had. The service was also really good, will definitely be back with more friends!.',
+    text: 'The best risotto I have ever had. The service was also really good,Don’t miss out on their freshly baked hummus.',
     image: '/assets/people/R4.svg',
   },
 ]
@@ -126,7 +126,7 @@ export const Reviews = () => {
   return (
     <div className="relative overflow-hidden">
       <motion.div
-        className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20 max-w-xxl 2xl:max-w-xxxl mx-auto "
+        className="flex flex-col justify-center items-center pt-8 md:pt-14 md:pb-20 max-w-xxl 2xl:max-w-xxxl mx-auto  relative"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -137,8 +137,11 @@ export const Reviews = () => {
           },
         }}
       >
+        <div className="absolute left-0 top-0 z-10 h-full w-4 lg:w-6 bg-gradient-to-r from-white/40 to-transparent" />
+        <div className="absolute right-0 top-0 z-10 h-full w-4 lg:w-6 bg-gradient-to-l from-white/40 to-transparent" />
+
         <motion.h1
-          className="font-alex text-golden text-5xl lg:text-7xl text-center pr-4 pb-2 lg:pb-4 -ml-1"
+          className="font-alex  text-golden text-5xl lg:text-7xl text-center pr-4 pb-2 lg:pb-4 -ml-1"
           variants={reviewsVariant}
         >
           Customer
@@ -165,7 +168,7 @@ const Car = () => {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="relative w-[75%] md:basis-1/2 lg:basis-1/3 mx-1  flex-none  bg-greener p-6 rounded-xl shadow-md"
+              className="relative w-[75%] md:basis-1/2 lg:basis-1/3 mx-1  flex-none  bg-greener p-6 rounded-xl shadow-md hover:scale-[1.015] ease-in-out transition-transform duration-200"
             >
               <div className="flex items-center mb-4">
                 <img
@@ -175,11 +178,11 @@ const Car = () => {
                 />
                 <div>
                   <h3 className="font-semibold text-gray-100">{review.name}</h3>
-                  <p className="text-sm">{review.position}</p>
+                  <p className="text-sm text-gray-400">{review.position}</p>
                 </div>
               </div>
               <p className="text-gray-300 lg:pr-2">{review.text}</p>
-              <div className="flex    gap-x-0.5 md:gap-x-1 pt-4">
+              <div className="flex    gap-x-1 lg:gap-x-1.5 pt-4">
                 {[...Array(review.rating)].map((_, i) => (
                   <Star
                     key={i}

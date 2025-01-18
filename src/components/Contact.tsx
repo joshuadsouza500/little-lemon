@@ -19,9 +19,9 @@ const contactVariant = {
 export const Contact = () => {
   return (
     <div className="relative overflow-hidden">
-      <div className="flex flex-col md:flex-row  pt-20 pb-10 lg:pb-20 pr-2 justify-between max-w-xxl 2xl:max-w-xxxl mx-auto">
+      <div className="flex flex-col md:flex-row  pt-20 pb-10 lg:pb-20 pr-2 justify-between max-w-xxl 2xl:max-w-xxxl mx-auto ">
         <motion.div
-          className="flex flex-col gap-3 ml-8 md:ml-28 pr-2  md:pr-0 items-start"
+          className="flex flex-col gap-3 ml-8 lg:ml-28 pr-2  md:pr-0 items-start "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -33,13 +33,13 @@ export const Contact = () => {
           }}
         >
           <motion.h1
-            className="font-alex text-golden text-6xl lg:text-7xl text-center md:text-left pr-4 ml-[12%] "
+            className="font-alex text-golden text-6xl lg:text-7xl text-center md:text-left pr-4 max-md:ml-[12%] "
             variants={contactVariant}
           >
             Say Hello
           </motion.h1>
           <motion.h1
-            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish  text-center ml-8 md:text-left pb-6 "
+            className="pr-4 font-josefin text-4xl md:text-5xl lg:text-6xl font-bold text-blackish  text-center max-md:ml-12  md:text-left pb-6 "
             variants={contactVariant}
           >
             Contact Us
@@ -67,16 +67,16 @@ export const Contact = () => {
             </span>
           </motion.div>
           <motion.button
-            className="ml-1 btn w-40 md:w-44 text-base bg-golden  rounded-lg  hover:bg-greener  text-white"
+            className="py-2  px-4 text-sm md:text-base bg-golden border-white rounded-sm  hover:bg-[#E4B44E] shadow-md text-white hover:scale-[.98] z-10"
             variants={contactVariant}
           >
             <NavLink to="/reservation">Book a table</NavLink>
           </motion.button>
         </motion.div>
-        <div className="px-2 ml-5 mr-1 md:ml-1 mt-10 md:mt-16 max-md:h-72 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20 rounded-lg overflow-hidden shadow-lg">
+        <div className="px-2 ml-5 mr-1 md:ml-1 mt-10 md:mt-16 max-md:h-72 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20 rounded-lg overflow-hidden shadow-lg z-10">
           <motion.img
             src="/assets/map.png"
-            className="rounded-2xl hidden"
+            className="rounded-2xl hidden "
             initial={{ filter: 'blur(4px)' }}
             whileInView={{ filter: 'blur(0px)' }}
             transition={{ duration: 1 }}
