@@ -81,7 +81,7 @@ export const Recommended = ({ menuItems }) => {
                     ${item.price}
                   </h6>
                   <button
-                    className="px-1 py-0.5 md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
+                    className="px-0.5 max-md:max-w-24 pt-1  md:px-2 md:py-1 max-md:text-sm rounded-md hover:scale-[.98]  bg-golden hover:bg-greener  text-white  "
                     onClick={() => {
                       const path = `/${item.id}`
                       navigate(path)

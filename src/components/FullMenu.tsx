@@ -354,7 +354,7 @@ export const FullMenu = ({ menuItems }) => {
         <div className="flex flex-col items-center justify-around md:flex-row-reverse ">
           <div className="mb-14">
             <img
-              src="/assets/bg/photo-collage.png.png"
+              src="/assets/menu/photo-collage.png"
               className="w-80 md:w-96 "
             ></img>
           </div>

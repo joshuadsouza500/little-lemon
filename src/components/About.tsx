@@ -63,7 +63,7 @@ export const About = () => {
         </motion.div>
         <div className="px-2 md:px-6 pt-14 md:pt-1  ">
           <motion.img
-            src="/assets/ABout.jpg"
+            src="/assets/bg/ABout.jpg"
             width={2000}
             className="rounded-md md:h-96 lg:h-full"
             alt="Restaurant image"

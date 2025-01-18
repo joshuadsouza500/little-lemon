@@ -31,7 +31,7 @@ const Booking = () => {
               placeholder="Pick a date"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full z-10">
             <label htmlFor="time" className="block text-golden/70 text-sm mb-1">
               Select a Time
             </label>
@@ -44,7 +44,7 @@ const Booking = () => {
           </div>
         </div>
         <div className="flex gap-x-3 w-full">
-          <div className="w-full">
+          <div className="w-full z-10">
             <label
               htmlFor="guests"
               className="block text-golden/70 text-sm mb-1"
@@ -73,7 +73,7 @@ const Booking = () => {
             />
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full z-10">
           <label
             htmlFor="message"
             className="block text-golden/70 text-sm mb-1"
