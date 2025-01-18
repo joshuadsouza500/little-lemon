@@ -20,21 +20,26 @@ const Booking = () => {
       </h2>
       <section className="flex flex-col gap-y-3 lg:gap-y-4  items-center justify-center max-w-sm sm:max-w-lg md:max-w-xl 2xl:max-w-3xl mx-auto px-2 text-golden/50 ">
         <div className="flex gap-x-3 w-full items-center">
-          {' '}
-          <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/50 text-golden/50 "
-            type="date"
-            placeholder="Date"
-            onFocus={(e) => (e.target.type = 'date')}
-            onBlur={(e) => (e.target.type = 'text')}
-          />
-          <input
-            className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm  rounded w-full placeholder:text-golden/50 text-golden/50 "
-            type="time"
-            placeholder="Time"
-            onFocus={(e) => (e.target.type = 'time')}
-            onBlur={(e) => (e.target.type = 'text')}
-          />
+          <div className="w-full">
+            <label htmlFor="date" className="block text-golden/70 text-sm mb-1">
+              Date
+            </label>
+            <input
+              id="date"
+              className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm rounded w-full placeholder:text-golden/50 text-golden/50"
+              type="date"
+            />
+          </div>
+          <div className="w-full">
+            <label htmlFor="time" className="block text-golden/70 text-sm mb-1">
+              Time
+            </label>
+            <input
+              id="time"
+              className="border-golden/60 border-[0.5px] py-2 lg:py-3 px-2 bg-transparent backdrop-blur-sm rounded w-full placeholder:text-golden/50 text-golden/50"
+              type="time"
+            />
+          </div>
         </div>
         <div className="flex gap-x-3 w-full">
           {' '}

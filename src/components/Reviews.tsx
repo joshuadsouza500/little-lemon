@@ -137,8 +137,8 @@ export const Reviews = () => {
           },
         }}
       >
-        <div className="absolute left-0 top-0 z-10 h-full w-4 lg:w-6 bg-gradient-to-r from-white/40 to-transparent" />
-        <div className="absolute right-0 top-0 z-10 h-full w-4 lg:w-6 bg-gradient-to-l from-white/40 to-transparent" />
+        <div className="absolute left-0 top-0 z-10 h-full w-1 lg:w-6 bg-gradient-to-r from-white/40 to-transparent" />
+        <div className="absolute right-0 top-0 z-10 h-full w-1 lg:w-6 bg-gradient-to-l from-white/40 to-transparent" />
 
         <motion.h1
           className="font-alex  text-golden text-5xl lg:text-7xl text-center pr-4 pb-2 lg:pb-4 -ml-1"
