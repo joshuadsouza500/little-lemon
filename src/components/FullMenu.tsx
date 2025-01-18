@@ -32,23 +32,23 @@ export const FullMenu = ({ menuItems }) => {
   return (
     <main className="bg-white relative overflow-hidden">
       <img
-        src="/assets/radish.png"
+        src="/assets/bg/radish.png"
         className="size-60 md:size-72 2xl:size-96 absolute -right-32 lg:-right-32 top-36 md:top-36 opacity-15 "
       />
       <img
-        src="/assets/Brock.png"
+        src="/assets/bg/Brock.png"
         className="size-60 md:size-72 2xl:size-96 absolute -left-28 2xl:-left-32 top-[25%] opacity-10 rotate-45"
       />
       <img
-        src="/assets/Leave.png"
+        src="/assets/bg/Leave.png"
         className="size-60 md:size-72 2xl:size-96 absolute -right-28 2xl:-right-32 top-[45%] opacity-10 -rotate-12"
       />
       <img
-        src="/assets/eggplant.png"
+        src="/assets/bg/eggplant.png"
         className="size-60 md:size-72 2xl:size-96 absolute -left-28 2xl:-left-32 top-[63%] opacity-10 rotate-180"
       />
       <img
-        src="/assets/pepper.png"
+        src="/assets/bg/pepper.png"
         className="size-60 md:size-72 2xl:size-96 absolute -right-28 lg:-right-32 top-[75%] opacity-10 rotate-45"
       />
 
@@ -354,7 +354,7 @@ export const FullMenu = ({ menuItems }) => {
         <div className="flex flex-col items-center justify-around md:flex-row-reverse ">
           <div className="mb-14">
             <img
-              src="/assets/photo-collage.png.png"
+              src="/assets/bg/photo-collage.png.png"
               className="w-80 md:w-96 "
             ></img>
           </div>
@@ -390,7 +390,7 @@ export const FullMenu = ({ menuItems }) => {
       </section>
 
       <img
-        src="/assets/Carrot.png"
+        src="/assets/bg/Carrot.png"
         className="size-60 md:size-72 2xl:size-96 absolute -left-28 2xl:-left-32 bottom-28 md:bottom-36 opacity-10 rotate-45 "
       />
     </main>

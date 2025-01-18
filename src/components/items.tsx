@@ -1,7 +1,7 @@
 const menuData = [
   {
     id: 1,
-    img: '/assets/paela.png',
+    img: '/assets/menu/paela.png',
     title: 'Paela',
     para: 'A flavourful Spanish rice dish cooked with a mix of seafood, chicken and vegetables, seasoned with aromatic spices.',
     ing: 'Rice / Saffron / Onion / Garlic / Bell peppers / Tomatoes / Chorizo / Chicken / Seafood / Lemon.',
@@ -9,7 +9,7 @@ const menuData = [
   },
   {
     id: 2,
-    img: '/assets/newplate .png',
+    img: '/assets/menu/newplate .png',
     title: 'Capricciosa',
     para: 'A mix of flavors featuring tangy tomato sauce, savory mozzarella cheese, fresh mushrooms, salty ham, and black olives. ',
     ing: 'Onions / Fresh flat-leaf parsley / Mashed potatoes / Pepper / Eggs / Tartare sauce.',
@@ -17,7 +17,7 @@ const menuData = [
   },
   {
     id: '3',
-    img: '/assets/newsalad.png',
+    img: '/assets/menu/newsalad.png',
     title: 'Caesar Salad',
     para: 'Crisp romaine lettuce, savory Caesar dressing, and crunchy croutons come together in our classic Caesar salad. ',
     ing: 'Romaine lettuce / Caesar dressing / Croutons / Parmesan cheese / Black pepper / Grilled chicken.',
@@ -25,7 +25,7 @@ const menuData = [
   },
   {
     id: '4',
-    img: '/assets/newpizza (1).png',
+    img: '/assets/menu/newpizza (1).png',
     title: 'Pizza ',
     para: 'Savory pepperoni slices, gooey mozzarella cheese, and zesty tomato sauce, all baked to perfection on our home made crust.',
     ing: 'Pizza dough / Tomato sauce / Mozzarella cheese / Pepperoni slices / Italian seasoning.',
@@ -33,7 +33,7 @@ const menuData = [
   },
   {
     id: '5',
-    img: '/assets/newfettucine (1).png',
+    img: '/assets/menu/newfettucine (1).png',
     title: 'Fettucine',
     para: 'Creamy alfredo sauce, topped with savory grilled chicken, shavings of parmesan cheese, and a sprinkling of fresh parsley.',
     ing: 'Fettuccine pasta / Alfredo sauce / Parmesan cheese / Garlic / Butter / Heavy cream / Salt / Black pepper.',
@@ -41,7 +41,7 @@ const menuData = [
   },
   {
     id: '6',
-    img: '/assets/newbuc.png',
+    img: '/assets/menu/newbuc.png',
     title: 'Bucantini',
     para: 'Bucatini pasta topped with savory authentic pancetta, freshly grated pecorino cheese, and a sprinkle of black pepper.',
     ing: 'Bucatini / Fresh vegetables / Tomatoes / Olives / Feta / Italian dressing.',
@@ -49,7 +49,7 @@ const menuData = [
   },
   {
     id: '7',
-    img: '/assets/hummus.png',
+    img: '/assets/menu/hummus.png',
     title: 'Hummus ',
     para: 'Creamy hummus served with warm pita bread, fresh veggies, and a drizzle of olive oil. Perfect for  enjoying a flavorful starter.',
     ing: 'Chickpeas / Garlic / Cilantro / Cumin / Coriander / Onion / Flour.',
@@ -57,7 +57,7 @@ const menuData = [
   },
   {
     id: '8',
-    img: '/assets/spanakopita.png',
+    img: '/assets/menu/spanakopita.png',
     title: 'Spanakopita',
     para: 'A traditional Greek dish made with flaky phyllo dough filled with a savory mixture of spinach, feta cheese, onions, and herbs.',
     ing: 'Spinach / Feta cheese / Phyllo dough / Onions / Eggs / Dill.',
@@ -65,7 +65,7 @@ const menuData = [
   },
   {
     id: '9',
-    img: '/assets/newfalafel - removebg-preview (1).png',
+    img: '/assets/menu/newfalafel - removebg-preview (1).png',
     title: 'Falafel',
     para: 'Crispy and flavorful vegetarian patties made with a blend of chickpeas, herbs, and spices. Served with tahini sauce.',
     ing: 'Chickpeas / Garlic / Cilantro / Cumin / Coriander / Onion / Flour.',
@@ -73,7 +73,7 @@ const menuData = [
   },
   {
     id: '10',
-    img: '/assets/kunafa (1) (1).png',
+    img: '/assets/menu/kunafa (1) (1).png',
     title: 'Kunafa',
     para: 'A Middle Eastern dessert made with shredded phyllo dough, filled with sweet cheese or nuts, and drizzled with a fragrant syrup.',
     ing: 'Kataifi dough / Butter / Ricotta cheese / Sugar syrup / Pistachios.',
@@ -81,7 +81,7 @@ const menuData = [
   },
   {
     id: '11',
-    img: '/assets/tiramisu.png',
+    img: '/assets/menu/tiramisu.png',
     title: 'Tiramisu',
     para: 'Our classic tiramisu features layers of espresso-soaked creamy mascarpone cheese, and a dusting of cocoa powder perfect for dessert.',
     ing: 'Ladyfingers / Mascarpone cheese / Eggs / Sugar / Coffee / Cocoa powder.',
@@ -89,7 +89,7 @@ const menuData = [
   },
   {
     id: '12',
-    img: '/assets/newice-cream.png',
+    img: '/assets/menu/newice-cream.png',
     title: 'Gelato',
     para: 'Indulge in our creamy and flavorful gelato, made with the finest ingredients and served in a variety of delicious flavors, Perfect for  dessert',
     ing: 'Milk / Sugar / Cream / Egg yolks / Vanilla / Flavorings.',

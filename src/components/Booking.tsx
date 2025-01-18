@@ -92,11 +92,11 @@ const Booking = () => {
         </button>
       </section>
       <img
-        src="/assets/pepper.png"
+        src="/assets/bg/pepper.png"
         className="size-64 md:size-72  2xl:size-96 absolute -left-24 xl:-left-28 top-[45%]  opacity-15 "
       />
       <img
-        src="/assets/radish.png"
+        src="/assets/bg/radish.png"
         className="size-64 md:size-72  2xl:size-96 absolute -right-24  top-[10%]  opacity-35 -rotate-45"
       />
     </div>

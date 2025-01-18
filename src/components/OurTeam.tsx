@@ -32,7 +32,7 @@ export const OurTeam = () => {
       id: 1,
       name: 'Steven Lucre',
       position: 'Head Chef',
-      image: '/assets/chef2.png',
+      image: '/assets/chef/chef2.png',
       description:
         'Steven has over 15 years of experience in fine dining and has worked in several Michelin-starred restaurants.',
     },
@@ -40,7 +40,7 @@ export const OurTeam = () => {
       id: 2,
       name: 'Melissa Sue',
       position: 'Sous Chef',
-      image: '/assets/Chef8.png',
+      image: '/assets/chef/Chef8.png',
       description:
         'Melissa specializes in pastry and has a passion for creating desserts that are as beautiful as they are delicious.',
     },
@@ -48,7 +48,7 @@ export const OurTeam = () => {
       id: 3,
       name: 'Mark Wright',
       position: 'Sous Chef',
-      image: '/assets/Chef7.png',
+      image: '/assets/chef/Chef7.png',
       description:
         'Mark brings a fusion of flavors from his travels around the world and has a wealth of culinary knowledge.',
     },
@@ -56,7 +56,7 @@ export const OurTeam = () => {
       id: 4,
       name: 'Alex Jones',
       position: 'Pastry Chef',
-      image: '/assets/Chef10.png',
+      image: '/assets/chef/Chef10.png',
       description:
         'With over 12 years of experience in the pastry arts, Alex specializes in creating exquisite desserts that have innovative flavors',
     },
