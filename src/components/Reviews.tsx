@@ -152,13 +152,17 @@ export const Reviews = () => {
         >
           Reviews
         </motion.h1>
-        <Car />
+        <Card />
       </motion.div>
+      <img
+        src="/assets/bg/Brock.png"
+        className="size-64 md:size-72  2xl:size-96 absolute -left-24 xl:-left-32 top-[20%]  opacity-10 rotate-45"
+      />
     </div>
   )
 }
 
-const Car = () => {
+const Card = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel()
   return (
     <div className="relative w-full overflow-hidden py-2">

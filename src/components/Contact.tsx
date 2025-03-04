@@ -73,15 +73,7 @@ export const Contact = () => {
             <NavLink to="/reservation">Book a table</NavLink>
           </motion.button>
         </motion.div>
-        <div className="px-2 ml-5 mr-1 md:ml-1 mt-10 md:mt-16 max-md:h-72 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20 rounded-lg overflow-hidden shadow-lg z-10">
-          <motion.img
-            src="/assets/map.png"
-            className="rounded-2xl hidden "
-            initial={{ filter: 'blur(4px)' }}
-            whileInView={{ filter: 'blur(0px)' }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          ></motion.img>
+        <div className="p-2 ml-5 mr-1 md:ml-1 mt-10 md:mt-16 max-md:h-72 w-[90%] md:w-[60%] lg:w-[45%] lg:mr-20 rounded-lg overflow-hidden shadow-lg z-10">
           <iframe
             title="Little Lemon Location"
             width="100%"
@@ -94,8 +86,8 @@ export const Contact = () => {
         </div>
       </div>
       <img
-        src="/assets/bg/eggplant.png"
-        className="size-64 md:size-72  2xl:size-96 absolute -left-24 xl:-left-32 top-[35%]  opacity-15 "
+        src="/assets/bg/radish.png"
+        className="size-64 md:size-72  2xl:size-96 absolute -left-24 xl:-left-32 top-[35%]  opacity-15 rotate-45 "
       />
     </div>
   )

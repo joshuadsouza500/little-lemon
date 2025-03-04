@@ -70,7 +70,7 @@ export const OurStory = () => {
               meals and shared moments around the table.
             </motion.span>
           </motion.div>
-          <div className="md:pr-10 md:pt-10 flex justify-center p-5 md:flex-none md:w-1/2 md:h-96">
+          <div className="md:pr-10 md:pt-10 flex justify-center p-5 md:flex-none md:w-1/2 md:h-96 2xl:h-[420px]">
             <motion.img
               src="/assets/seating2new.jpg"
               width={500}
