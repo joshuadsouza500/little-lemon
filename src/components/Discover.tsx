@@ -19,7 +19,7 @@ const discoverVariant = {
 
 export const Discover = () => {
   return (
-    <div className="flex flex-col lg:flex-row-reverse pt-16 2xl:pt-24 pb-10 lg:pb-16 pr-2 max-w-6xl xl:max-w-xxl 2xl:max-w-xxxl mx-auto   lg:px-4">
+    <div className="flex flex-col lg:flex-row-reverse pt-16 2xl:pt-24 pb-10 lg:pb-16 2xl:pb-20 pr-2 max-w-6xl xl:max-w-xxl 2xl:max-w-xxxl mx-auto   lg:px-4">
       <motion.div
         className="flex flex-col gap-1  lg:gap-3 ml-2 mr-2 lg:ml-8 xl:ml-12 lg:pr-0 items-center lg:items-baseline lg:w-1/2 "
         initial="hidden"
@@ -63,9 +63,9 @@ export const Discover = () => {
 
       <div className="w-full lg:w-1/2 px-2 md:px-6 pt-14 md:pt-1 ">
         <motion.img
-          src="/assets/Menu.jpeg"
+          src="/assets/Menu2.jpeg"
           width={400}
-          className="rounded-md h-64 sm:h-80 lg:h-96 2xl:h-[420px] shadow-md w-full object-cover"
+          className="rounded-md h-64 sm:h-80 lg:h-96 2xl:h-[450px] shadow-md w-full object-cover"
           alt="Restaurant image"
           initial={{ filter: 'blur(4px)' }}
           whileInView={{ filter: 'blur(0px)' }}

@@ -65,7 +65,7 @@ export const About = () => {
           <motion.img
             src="/assets/bg/ABout.jpg"
             width={2000}
-            className="rounded-md md:h-96 lg:h-full"
+            className="rounded-md md:h-96 2xl:[420px] lg:h-full"
             alt="Restaurant image"
             initial={{ filter: 'blur(4px)' }}
             whileInView={{ filter: 'blur(0px)' }}
