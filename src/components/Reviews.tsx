@@ -85,7 +85,7 @@ export const Reviews1 = () => {
           variants={reviewsVariant}
         >
           {reviews.map((review) => (
-            <div key={review.id} className="w-[75%] md:basis-1/2 lg:basis-1/3 ">
+            <div key={review.id} className="w-[75%] md:basis-1/2 lg:basis-1/3 z-10 relative ">
               <div className="bg-greener p-6 rounded-xl shadow-md h-full ">
                 <div className="flex items-center mb-4">
                   <img
@@ -168,11 +168,11 @@ const Card = () => {
     <div className="relative w-full overflow-hidden py-2">
       {' '}
       <div className="embla  " ref={emblaRef}>
-        <div className="embla__container min-h-[30vh] h-auto pl-2 lg:pl-10   flex w-full gap-x-3 md:gap-x-5 ">
+        <div className="embla__container min-h-[30vh] h-auto pl-2 lg:pl-10   flex w-full gap-x-3 md:gap-x-5  ">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="relative w-[75%] md:basis-1/2 lg:basis-1/3 mx-1  flex-none  bg-greener p-6 rounded-xl shadow-md hover:scale-[1.015] ease-in-out transition-transform duration-200"
+              className="relative z-10 w-[75%] md:basis-1/2 lg:basis-1/3 mx-1  flex-none  bg-greener p-6 rounded-xl shadow-md hover:scale-[1.015] ease-in-out transition-transform duration-200"
             >
               <div className="flex items-center mb-4">
                 <img
